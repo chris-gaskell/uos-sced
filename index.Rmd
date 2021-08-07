@@ -1,16 +1,140 @@
 ---
-title: ' Research Module A practical guide on how to plan for, conduct and report a single case experimental design for the CAP training programme   '
-subtitle: ' Stephen Kellett, Chris Gaskell & Mel Simmonds-Buckley  Clinical and Applied Psychology Unit University of Sheffield March 2021'
-author: Chris Gaskell
-date: 2021-08-05
+title: 'A practical guide on how to plan for, conduct and report a single case experimental design'
+subtitle: 'Stephen Kellett, Mel Simmonds-Buckley & Chris Gaskell'
+author: false
+institute: 'Clinical and Applied Psychology Unit University of Sheffield'
+date: false
 output:
   xaringan::moon_reader:
-  lib_dir: libs
-  nature:
-    highlightStyle: github
-    highlightLines: true
-    countIncrementalSlides: false
+    lib_dir: libs
+    css: ["custom.css", "fonts.css", "default", "default-fonts", "hygge", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    nature:
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
 ---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(xaringan)
+library(xaringanExtra)
+library(dplyr)
+library(gganimate)
+library(ggExtra)
+library(xaringanthemer)
+library(RColorBrewer)
+library(vembedr)
+
+xaringanExtra::use_panelset()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_webcam()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_progress_bar(color = "red", location = "top")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+#xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
+
+
+```
+class: center, middle, split-three, about-me-slide
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+
+.column.bg-main1[.content[
+<img style="border-radius: 50%;" src="https://catalyse.uk.com/wp-content/uploads/sites/3/2015/10/SKcrop.jpg" width="150px"/>
+
+### Steve Kellett
+
+#### Clinical Psychologist
+
+.fade[Sheffied Health & Social Care
+NHS Foundation Trust]
+
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:s.kellett@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Stephen-Kellett)
+]]
+.column.bg-main2[.content[
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1235537191683723265/Qo6rZ317_400x400.jpg" width="150px"/>
+
+### Mel Simmonds-Buckley
+
+#### Researcher
+
+.fade[University of Sheffield]
+
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:m.simmonds-buckley@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=T85W7TYAAAAJ&hl=en)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Mel-Simmonds-Buckley)
+]]
+.column.bg-main3[.content[
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1371177930236293126/Sf9QTdef_400x400.jpg" width="150px"/>
+
+### Chris Gaskell
+
+#### Clinical Psychologist
+
+.fade[Salford Royal
+NHS Foundation Trust]
+
+[`r icons::icon_style(icons::fontawesome("twitter"), scale = 1.5)` ](https://twitter.com/chrisgaskell92)
+[`r icons::icon_style(icons::fontawesome("github"), scale = 1.5)`](https://github.com/chris-gaskell)
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:cgaskell1@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=gQuNwfYAAAAJ&hl=en&authuser=1&oi=ao)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Chris-Gaskell-2)
+]]
+
+---
+name: contents-slide
+class: inverse
+background-image: url(https://rin.org.uk/resource/resmgr/nav21/nav21_map.png)
+background-position:80% 60%
+background-size: 350px 300px
+
+# `r icons::icon_style(icons::fontawesome("compass"), scale = 1, fill = "var(--my-yellow)")` Navigating these slides
+
+.pull-left[
+### Day 1
+- [Aims for the workshop](#aims-slide)
+- [What are SCEDs](#what-slide)
+- [Measuring change](#measure-slide)
+- [Setting it up](#set-up-slide)
+
+### Day 2
+- [Analysis](#analysis-slide)
+- [What are SCEDs](#what-slide)
+- [Resources](#resources-slide)
+]
+
+.footnote[**Note**: all underlined
+.white[.underline[white]] and
+.red[.underline[red]] text are hyperlinks!]\
+---
+
+name: contents-slide
+class: inverse
+background-image:
+background-position:
+background-size:
+
+# `r icons::icon_style(icons::fontawesome("compass"), scale = 1, fill = "var(--my-yellow)")` Navigating these slides
+
+### Keyoard shortcuts - press H.
+
+### Tile View - just press O.
+
+
+
+
+
+---
+name:aims-slide
 #  OVERALL AIMS OF THE WORKSHOP 
 
 + To become familiar with the requirements of the single-case experimental design submission on the CAP course
@@ -910,6 +1034,7 @@ PowerPoint template provided to copy and paste your results into!
 	+ Anything you are concerned/unsure about?
 
 ---
+name: last-slide
 #  References 
 
 + Cohen et al (2013) Single-Case Research Design in Pediatric Psychology: Considerations Regarding Data Analysis. Journal of Pediatric Psychology, 39, 124-127.
