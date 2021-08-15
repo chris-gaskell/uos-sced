@@ -1,14 +1,16 @@
 ---
-title: 'A practical guide on how to plan for, conduct and report a single case experimental design'
-subtitle: 'Stephen Kellett, Mel Simmonds-Buckley & Chris Gaskell'
-author: false
-institute: 'Clinical and Applied Psychology Unit University of Sheffield'
+title: 'Planning for, conducting and reporting a single case experimental design'
+subtitle: 'Clinical and Applied Psychology Unit'
+author: University of Sheffield
+institute: false
 date: false
 output:
   xaringan::moon_reader:
     lib_dir: libs
     css: ["custom.css", "fonts.css", "default", "default-fonts", "hygge", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
     nature:
+      ratio: 16:9
+      titleSlideClass: ["top", "center"]
       slideNumberFormat: |
         <div class="progress-bar-container">
           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
@@ -31,6 +33,7 @@ library(xaringanthemer)
 library(RColorBrewer)
 library(vembedr)
 
+xaringanExtra::use_editable()
 xaringanExtra::use_panelset()
 xaringanExtra::use_freezeframe()
 xaringanExtra::use_webcam()
@@ -39,7 +42,7 @@ xaringanExtra::use_progress_bar(color = "red", location = "top")
 xaringanExtra::use_tile_view()
 xaringanExtra::use_scribble()
 #xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
-
+xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
 
 ```
 class: center, middle, split-three, about-me-slide
@@ -102,19 +105,23 @@ background-size: 350px 300px
 .pull-left[
 ### Day 1
 - [Aims for the workshop](#aims-slide)
-- [What are SCEDs](#what-slide)
+- [Intro to SCEDs](#intro-slide)
+- [Why use SCEDs](#why-slide)
+- [Types of SCEDs](#type-slide)
 - [Measuring change](#measure-slide)
 - [Setting it up](#set-up-slide)
 
 ### Day 2
 - [Analysis](#analysis-slide)
-- [What are SCEDs](#what-slide)
+- [Practice](#practice-slide)
 - [Resources](#resources-slide)
 ]
 
+.pull-right[
 .footnote[**Note**: all underlined
 .white[.underline[white]] and
 .red[.underline[red]] text are hyperlinks!]\
+]
 ---
 
 name: contents-slide
@@ -125,228 +132,401 @@ background-size:
 
 # `r icons::icon_style(icons::fontawesome("compass"), scale = 1, fill = "var(--my-yellow)")` Navigating these slides
 
-### Keyoard shortcuts - press H.
+`r icons::icon_style(icons::fontawesome("keyboard"), scale = 1, fill = "var(--my-yellow)")`
+.large[.white[Keyoard shortcuts] - Press 'h'.]
 
-### Tile View - just press O.
+`r icons::icon_style(icons::fontawesome("map-marked-alt"), scale = 1, fill = "var(--my-yellow)")`
+.large[.white[Overview slides] - Press 'o'.]
 
+`r icons::icon_style(icons::fontawesome("pen"), scale = 1, fill = "var(--my-yellow)")`
+.large[.white[Scribble on slides] - Press 's'.]
 
+.footnote[
+`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`
+If you find any problems with these slides then e-mail
+<a href="mailto:cgaskell1@sheffield.ac.uk">Chris</a>.
+]
 
+--
+.pull-right[
+.center[
+<figure>
+  <img src="https://spcanelon.github.io/xaringan-basics-and-beyond/slides/img/hex-xaringan.png" alt="Trulli" style="width:45%">
+  
+    <img src="https://psyteachr.github.io/hack-your-data/img/rmarkdown.png" alt="Trulli" style="width:45%">
+  <figcaption>.small[Slides made using Xaringan and R Markdown.]</figcaption>
+</figure>
+]]
 
 
 ---
+layout: true
 name:aims-slide
-#  OVERALL AIMS OF THE WORKSHOP 
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+---
 
-+ To become familiar with the requirements of the single-case experimental design submission on the CAP course
-	+ To appreciate the linkage between practice-based evidence and single case methodology
-	+ To understand the basic features of the available designs
-	+ To consider ways of making single case work more accessible to your client
-	+ To appreciate the potential of single case methodology
+#  Aims of the workshop
+
++ To become .blue[familiar] with the requirements of the single-case experimental design.
++ To appreciate the linkage between .blue[practice-based evidence] and single case methodology.
++ To .blue[understand] the basic features of the available designs.
++ To consider ways of making single case work more accessible to your client.
++ To appreciate the .blue[potential] of single case methodology.
 
 
 ---
-#  OVERALL AIMS OF THE WORKSHOP 
+#  Aims of the workshop
 
-To review the application of single-case methodology within clinical research and practice.
-To examine practical difficulties arising from the implementation of single case studies.
-To provide practical experience of design and analysis of single case studies.
-To provide a forum for you to discuss foreseen problems associated with  single case design and to problem solve these with you.
++ To review the application of single-case methodology within clinical research and practice.
++ To examine .blue[practical difficulties] arising from the implementation of single case studies.
++ To provide practical experience of design and analysis of single case studies.
++ To provide a forum for you to discuss foreseen problems associated with single case design and to problem solve these with you.
+
+---
+#  Hopes for the workshop
+
+## .can-edit.key-firstSlideTitleuniquw[include...]
+
+---
+#  A note on the assignment
+
+.pull-left[
+.small[
++ Conduct a SCED using delivery of the Unified Protocol.
+  + Any SCED design is permissible (we will teach you all the methods). 
+  + Submit via Unidrive (not Turnitin).
+  + Ethical approval for this in place
++ Patient information and consent forms are on MUSE
+  + Include signed consent form in appendix.
+]]
+
+
+.pull-right[<img src="https://i.imgflip.com/2f6v9k.jpg" alt="Trulli" style="width:90%">
+]
+
+---
+layout: false
+class: inverse, middle, center
+# Introduction to SCED
+
+---
+layout: true
+name:aims-slide
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+
+---
+# Brief history slide
+
+---
+background-image: url(images/plot.png)
+background-position:50% 95%
+background-size: 70% 30%
+
+#  Single case involves: 
+
+--
+
++ .blue[Time-series] measurement (quantifiable + over time).
+
+--
+
++ .blue[Baseline] period.
+
+--
+
++ .blue[Experimental manipulation] of an IV.
+
+???
+
++ (I.e. introduce/remove/change treatment).
++ Experimental = 3+ manipulations
++ Less than this = quasi experimental.
+
+--
+
++ Focus on .blue[within-subject] variability.
+
+---
+
+#  What is a baseline? 
+
++ .blue[Repeated measurements] before treatment is introduced.
+
+???
+
+so that the ‘natural course’ of the outcome is known.
+
+--
+
++ The ideal is .blue[long and stable] baselines.
+
+--
+
+.pull-left[
+.red[However:]
++ Not common 
++ Some disorders have inbuilt variability.
++ Are neutral baselines are a fallacy?
+]
+
+???
+- so don’t always expect a stable baseline
+- you have contact with the service user; you are assessing them.
+--
+
+.pull-right[
+<img src="https://media.makeameme.org/created/one-does-not-5ac35f.jpg" alt="Girl in a jacket" width="290" height="250">
+]
 
 
 ---
-#  PROGRAMME 
+#  Treatment  
 
-First day:  SCED rationale, design and measures
-Overview of uses and applications of SCED
-Basic principles.
-Modelling and role play of designing measures for a single case study.
-How to implement - designs and measures.
++ Involves the introduction (and/or withdrawal) of the UP so that its effect on the idiographic measures can be assessed
+	+ The UP you deliver needs to be well specified
+	+ Take all of this – the design and the intervention to supervision.
+	+ Tape a treatment session and get your supervisor to rate your clinical competency with the CTS-R and you can report that in your method – that would add to the write up (but isn’t a must do).
+
+---
+
+#  The focus? 
+
++ Your .blue[individual] service user.
++ .blue[You], the clinician.
++ Why and what leads to change in this client?
++ Within client change rather than across client change.
+
+---
+class: inverse, middle, center
+layout: false
+
+# Why use SCMs? 
 
 
 ---
-#  Evaluating what? 
-
-+ You need to complete a SCED of the delivery of the Unified Protocol with a service user
-	+ Any SCED design is permissible – be creative – and we will teach you all the methods
-	+ Submit via Unidrive and not Turnitin.
-	+ There is ethical approval for this in place
-	+ The patient information and consent forms are on MUSE – the appendix of the submission needs the signed consent form.
-
-
+layout: true
+name:aims-slide
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
 ---
-#  PROGRAMME 
 
-Second day:  evaluation and interpretation
-Approaches to evaluation – both visual and statistical.
-Practicing analysing different types of single case  data using some SCED software
-Look at the data generated and interpret it
-
-
----
 #  So why use SCMs? 
 
-Clinical research : testing clinical hypotheses and contributing to knowledge.
-Practice philosophy : being a scientist practitioner.
-Accountability and evaluation : the effective practitioner and auditing your work. 
-Education and training : learning SCED skills for the rest of your career.
+--
+
+.large[.red[`r icons::icon_style(icons::fontawesome("microscope"), scale = 1, fill = "var(--my-blue)")` **Clinical research:**] Testing clinical hypotheses and contributing to knowledge.]
+
+--
+
+.large[.blue[`r icons::icon_style(icons::fontawesome("vial"), scale = 1, fill = "var(--my-blue)")` **Practice philosophy**:] Being a scientist practitioner.]
+
+--
+
+.large[.orange[`r icons::icon_style(icons::fontawesome("balance-scale"), scale = 1, fill = "var(--my-blue)")` **Accountability and evaluation:**] Being a effective practitioner and auditing your work.]
+
+--
+
+.large[.pink[`r icons::icon_style(icons::fontawesome("book-open"), scale = 1, fill = "var(--my-blue)")` **Education and training:**] Learning SCED skills for the rest of your career]
+
+---
+# Status of SCED as a research tool? 
+
++ Highly .blue[accessible] for clinicians.
++ Growing .blue[popularity].
+  + Single case texts/books regularly published.
+  + No longer restricted to ABA.
+  + Health user movements.
++ Appropriate for novel or .blue[emerging] areas.
+  + e.g. CBT and panic/psychosis rooted in SCED evidence.
+  + RCTs are not the only option.
++ Rapidly developing field.
+  + New analytical methods + designs.
+
+.pull-right[
+<img src="https://i.vimeocdn.com/portrait/6782840_640x640" alt="Girl in a jacket" width="200" height="150">]
 
 
 ---
-#  How successful has SCM been as a research tool? 
-
-Real contribution to science.
-Steady stream of single case texts published.
-Many major advances in psychotherapies originally  published originally as SCM pilots (e.g. CBT and panic/psychosis)
-Big acceptance of SCM within medicine
-Recent trends are away from Applied Behaviour Analysis applications to more general evaluations of therapy across a wider range of clinical problems
-Less sophisticated designs tend to be employed
-Wider range of more appropriate statistics available and packages that support them
-
+# Hour Glass Model
 
 ---
-#  CLINICAL PRACTICE 	 
+background-image: url(https://www.its.ws/PublishingImages/Quality/Quality-data.jpg)
+background-position:100% 65%
+background-size: 45% 65%
+#  Clinical Practice
 
-Accountability and evaluation
-Demonstrating treatment effectiveness to a client or a clinical team or a family (e.g. enhancing "self efficacy" and client's involvement / compliance with treatment).
-Training in single case methods makes more effective practitioners?
-Referral on following ineffective treatment – you will really know this
-
+.pull-left[
++ Accountability and evaluation.
++ Demonstrating treatment effectiveness.
++ Monitoring progress (or deterioration).
++ Training in single case methods makes more effective practitioners?
++ Referral on following ineffective treatment – you will really know this.
++ Inviting patient to be part of evaluation.
+]
 
 ---
-#  Single case defined as: 
+background-image: url(https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc2VhcmNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
+background-position:85% 85%
+background-size: cover
+class: center, top
 
-+ The repeated collection of quantifiable (numerical) data on a single clinical case , always involving repeated measurement over a baseline period
-	+ Experimental manipulation through some form of introduction or withdrawal of an intervention and the changes assessed against the baseline.
-	+ Characteristics intended to help the clinician rule out alternative explanations for a finding by focusing on within-subject variability and to seek to understand and explain the causes of that variation
-	+ Such an approach may or may not include replicating the design over several cases to form a single-case series (CAPs not required to do this)
-	+ Qualitative approaches can also be profitably applied to the single-case design. The collection of rich, detailed qualitative information throughout the course of treatment can prove useful in helping to rule out alternative hypotheses
-
+##  .white[.my-hot-red[Being a Scientific Practitioner]]
 
 ---
 
-![](assets/img/image1.emf)
+# Scientific Practitioner
 
----
-#  Where is the focus? 
+.center[
+Most useful contribution of SCED?
 
-Your individual service user
-You, the apprentice CAP
-Why and what leads to change in this client?
-Within client variability and change rather than across groups of clients
+Ability to answer questions that are .blue[clinically relevant variants on those of evidence-based practice.]]
+
+--
+
+.pull-left[
+.white[.my-hot-blue[**"Does this evidence-based treatment work for this particular client, who differs in some way from the sample characteristics of the evidence base?"**
+]]]
+
+--
+
+.pull-right[
+<img src="https://www.lanternaeducation.com/wp-content/uploads/2017/01/how-does-it-work-meme.jpg" alt="Girl in a jacket" width="290" height="200">]
+
 
 ---
 #  What’s the advantage of SCED? 
 
 + Low cost
-	+ Low infrastructure
-	+ Small ‘turning circle’
-	+ Easily adaptable
-	+ Flexible methods
++ Low infrastructure
++ Small ‘turning circle’
++ Easily adaptable + flexible
++ Collaborative (if done right)
+
+--
+
+.large[.white[.my-hot-blue[**Available for all clinicians to use!**]]].
+
+--
+.center[
+<img src="https://www.worldoffemale.com/wp-content/uploads/2019/04/you-can-do-it-meme-72.jpg" alt="Girl in a jacket" width="290" height="150">]
 
 ---
-#  Why is SCED useful? 
-
-Perhaps the most useful contribution the single-case design can make to efficacy-effectiveness research is its ability to answer questions that are clinically relevant variants on those of evidence-based practice:
-+ Does this evidence-based treatment work for this particular type of client, who differs in some way from the sample characteristics of the evidence base?
-
----
-#  So why don’t clinicians use it? 
+#  Why don’t clinicians use it? 
 
 + Lack of confidence
-	+ Lack of knowledge
-	+ The ideal described in the classic texts on the design seems a far cry from what is possible in the real world
++ Lack of knowledge
++ Can be messy in practice.
+  + The ideal described in the classic texts on the design seems a far cry from what is possible in the real world.
++ Perception that it is too much for the recipient to handle.
+  + <a href="http://www.dgapractice.com/documents/meehl_case_conferences_adapted.pdf">Theory of Spun Glass</a> (Meehl, 1973)
 
 ---
-#  How to engage clients 
-
-+ Not a must do aspect of your work
-	+ Have a relaxed attitude
-	+ Display interest in their plight
-	+ Be flexible
-	+ This is an aspect of your normal practice
-	+ Encourage reflectivity
-	+ Keeping an eye on progress
-	+ Promise feedback
+layout: false
+class: center, middle, inverse
+# Approaches to Measurement
 
 ---
-#  SCED balances nomothetic and idiographic approaches to measurement 
+background-image: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhc3VyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
+background-position:85% 85%
+background-size: cover
+class: center, middle
 
-![](assets/img/image2.png)
+#  .white[.my-hot-red[Approaches to Measurement]]
 
----
-#  Defining feature: repeated idiographic measurement 
-
-+ A funnel approach from nomothetic to idiographic target measures
-	+ Usually single case designs rely either on direct staff/parent/carer observations OR self-monitoring using self-report diaries.
-	+ Frequent measurement of idiographic outcome measures that are key to the maintenance of the clinical problem
-	+ The repeated idiographic measures provide data on the variation across time in these outcome. With this information the search can begin for the causes of that variation
-	+ In essence, you then ask to what extent the observed variation in the idiographic measures is consistent with change occurring?
 
 ---
-#  What is a baseline? 
+class: center, top, split-three,
 
-+ A baseline ‘A’ involves taking repeated measures of the idiographic measures before treatment occurs - so that the ‘natural course’ of the outcome is known
-	+ In terms of the ideal, long and stable baselines are considered helpful – but not that common.
-	+ Technically neutral baselines are a fallacy – you have contact with the service user; you are assessing them.
-	+ Some disorders have inbuilt variability, so don’t expect a stable baseline
+
+
+.column.bg-main1[.content[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+### Nomothetic Measures
+
+.fade[Traditional questionnaire approaches used in services.]
+]
+
+.my-hot-pink[ 
+- Attempts to generalise people.
+- Uses objective knowledge.
+- Based on data that is categorical or numerical.
+]
+]
+
+--
+
+.column.bg-main2[.content[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+
+### Idiographic Measures
+
+.fade[Unique measures applied in an individualised manner.]
+]
+.my-hot-blue[
+- Focuses on recognition of uniqueness.
+- Uses subjective experience.
+- Based on study of uniqueness at an individual level.
+]
+]
+
+--
+
+.column.bg-main3[.content[
+<img style="border-radius: 50%;" src="" width="150px"/>
+
+### Qualitative Approaches
+
+.fade[Qualitative approaches to assessment (e.g. interviews).]]
+.my-hot-red[
+- like ideographics, focuses on subjective judgement and experience. 
+- Traditional methods: interviews, focus groups, soft outcomes.
+]
+]
+
+.footnote[
+<a href="https://i.ytimg.com/vi/eiCSJL5zOng/maxresdefault.jpg">Adapted from </a>
+]
+---
+
+#  Ideographic or nomothetic?
+
+<p>SCED seeks to balance focus on nomothetic and idiographic approaches to measurement.</p>
+
+A funnel approach from nomothetic to idiographic target measures
+
+--
+
+<figure class="quote">
+  <blockquote>.blue[
+    “Different but complementary approaches to accumulating a broader base of evidence... So, when asked by clinical trainees, what two outcome measures I would recommend, my response invariably is: one nomothetic and one idiographic".]
+  <figcaption>
+    &mdash; Barkham, 2016</cite>  </figcaption>
+</figure>
+
+--
+
+<p>Nomothetic and ideographic has long tradition within psychotherapy Sheffield University (e.g., Barkham, Stiles, & Shapiro, 1993).</p>
+
+.footnote[
+<a href="https://eprints.whiterose.ac.uk/104190/1/Commentary%20on%20Alves%20and%20Sales%20final%20version.pdf"> Barkham commentary (2017) </a>
+]
+
 
 ---
-#  So, why is baseline stability an issue? 
 
-+ A worsening baseline: sudden, dramatic worsening of symptoms may represent a temporary change that would dissipate regardless of any intervention
-	+ An improving baseline: problematic, because any subsequent improvement during the intervention phase may have occurred whether or not the intervention was introduced
+https://dclinpsych.leeds.ac.uk/wp-content/uploads/sites/26/2019/03/Gary-Latchford-idiographic-day.pdf
 
----
-#  Baseline-practical issues 
-
-+ Suitable baseline: the assessment phase
-	+ Identify a small number of target variables during the assessment and then generate a brief rating scale, which the client would complete daily over time 
-
----
-#  STABLE BASELINES 
-
-Baseline should be stable (mean level) with low variability.
-Problems arise if baselines display:
-( i )	Linear trends:
-(ii)	Higher order trends
-(iii)	High variability
-Presence of ( i ), (ii), or (iii) makes both visual or mathematical analysis more difficult.
-
----
-#  BASELINE REQUIRMENTS  
-
-What are the minimum requirements for a baseline?
-Number of observations? 14 DAYS
-Stability?  Sidman suggests collecting data until a stable baseline is achieved.  Stability is defined  5% variability around mean value.
-Remember. Your baseline measures should continue throughout your intervention and be repeated at follow up.
-When does the baseline start and end? In the UP, the baseline (A) would end once you have the formulation in place. Start of module 1 is start of treatment (B).  The UP formulation goes in the appendix of the piece of coursework.
-
----
-#  Designing idiographic measures: tips  
-
-+ Designed collaboratively
-	+ In the client’s language
-	+ Can be a piece of cognition, behaviour , affect or interpersonal process (or a variety of these; topographical variation)
-	+ Anchored and scaled effectively – in the clients own words
-	+ High frequency occurrences are best
-	+ Intensity measures
-	+ Frequency measures
-	+ When to complete?
-	+ What time period do they cover?
-
----
-#  Consider having a control idiographic measure 
-
-+ These are an idiographic measure, not expected to change due to the intervention
-	+ If there is change in the target idiographic measures and not the control is shows the intervention working.
-	+ Stability also shows its not spontaneous recovery
-
----
-#  Modelling and role play  
-
-+ Lets decide as a group what the client will be presenting with and in what context
-	+ What the demonstration and then we can critique it
-	+ Then you will get to practice in 2s – you both have a go.
+#  Time series measurement 
++ Frequent measurement of idiographic outcome measures that are key to the maintenance of the clinical problem
++ In essence, you then ask to what extent the observed variation in the idiographic measures is consistent with change occurring?
++ The repeated idiographic measures provide data on the variation across time in these outcome. With this information the search can begin for the causes of that variation
 
 ---
 #  Choosing nomothetic measures  
@@ -365,87 +545,234 @@ When does the baseline start and end? In the UP, the baseline (A) would end once
 	+ You take these measures (e.g. quality of life) occasionally and often in tandem with the nomothetic outcomes measures.
 
 ---
-#  Treatment  
-
-+ Involves the introduction (and/or withdrawal) of the UP so that its effect on the idiographic measures can be assessed
-	+ The UP you deliver needs to be well specified
-	+ Take all of this – the design and the intervention to supervision.
-	+ Tape a treatment session and get your supervisor to rate your clinical competency with the CTS-R and you can report that in your method – that would add to the write up (but isn’t a must do).
++ Qualitative approaches can also be profitably applied to the single-case design. The collection of rich, detailed qualitative information throughout the course of treatment can prove useful in helping to rule out alternative hypotheses
 
 ---
-#  CHOOSING AN APPROPRIATE DESIGN 
+background-image: url(https://i.imgflip.com/n7kko.jpg)
+background-position:95% 65%
+background-size: 45% 40%
+
+# Setting up ideos
+
+---
+
+# Practicalities
+
++ Usually single case designs rely either on direct staff/parent/carer observations OR self-monitoring using self-report diaries.
+
+#  Designing idiographic measures: tips  
+
++ Designed collaboratively
++ In the client’s language
++ Can be a piece of cognition, behaviour , affect or interpersonal process (or a variety of these; topographical variation)
++ Anchored and scaled effectively – in the clients own words
++ High frequency occurrences are best
++ Intensity measures
++ Frequency measures
++ When to complete?
++ What time period do they cover?
+
+---
+
+
+
+#  BASELINE REQUIRMENTS  
+
+What are the minimum requirements for a baseline?
+Number of observations? 14 DAYS
+Stability?  Sidman suggests collecting data until a stable baseline is achieved.  Stability is defined  5% variability around mean value.
+Remember. Your baseline measures should continue throughout your intervention and be repeated at follow up.
+When does the baseline start and end? In the UP, the baseline (A) would end once you have the formulation in place. Start of module 1 is start of treatment (B).  The UP formulation goes in the appendix of the piece of coursework.
+
+---
+#  So, why is baseline stability an issue? 
+
++ A worsening baseline: sudden, dramatic worsening of symptoms may represent a temporary change that would dissipate regardless of any intervention
+	+ An improving baseline: problematic, because any subsequent improvement during the intervention phase may have occurred whether or not the intervention was introduced
+
+##  Baseline-practical issues 
+
++ Suitable baseline: the assessment phase
+	+ Identify a small number of target variables during the assessment and then generate a brief rating scale, which the client would complete daily over time 
+
+##  STABLE BASELINES 
+
+Baseline should be stable (mean level) with low variability.
+Problems arise if baselines display:
+( i )	Linear trends:
+(ii)	Higher order trends
+(iii)	High variability
+Presence of ( i ), (ii), or (iii) makes both visual or mathematical analysis more difficult.
+
+
+---
+#  Consider having a control idiographic measure 
+
++ These are an idiographic measure, not expected to change due to the intervention
+	+ If there is change in the target idiographic measures and not the control is shows the intervention working.
+	+ Stability also shows its not spontaneous recovery
+
+---
+#  How to engage clients 
+
++ Not a must do aspect of your work
++ Good rationale
++ Have a relaxed attitude
++ Display interest in their plight
++ Be flexible
++ This is an aspect of your normal practice
++ Encourage reflectivity
++ Keeping an eye on progress
++ Promise feedback
+
+---
+#  Modelling and role play  
+
++ Lets decide as a group what the client will be presenting with and in what context
+	+ What the demonstration and then we can critique it
+	+ Then you will get to practice in 2s – you both have a go.
+
+---
+class: inverse
+
+### Different designs
+
+
+.panelset[
+
+.panel[.panel-name[Designs]
+
+.white[
+Various SCED designs
+
+Endless number of possible combinations.
+]
+
+
+What do the letters mean?
+- A = Baseline
+- B = Intervention
+- A2/W = Withdraw treatment
+- C = Second, alternate treatment.
+- FU = Follow up.
 
 The choice of design determines the internal and external validity of your single-case study.
-Important to be aware of what is possible in terms of a design
-Ask - am I being ethical and so are reversals or withdrawals appropriate?
-Important to know the methodological features before you start (see the later planning slide)
 
----
+Important to be aware of what is feasible and ethical.
 
-![](assets/img/image3.jpeg)
 
----
-#  The A/B design(see the CBT example with an older adult in your pack) 
+] <!--Designs-->
+
+.panel[.panel-name[A-B]
+
+.pull-left-narrow[
+- Most accessible.
+- Low validity.
+- Empirical case study.
+- Another point.
+- Another point,
+]
+
+.pull-right-wide[
+.center[
+<img src="Images/AB.png" alt="Girl in a jacket" width="1200" height="400">]
+]
+
+.small[Link to a relevant paper.]
+
+
+] <!--A-B Design-->
+
+.panel[.panel-name[A-B-FU]
+
+.pull-left-narrow[
+- Most accessible.
+- Low validity.
+- Empirical case study.
+- Another point.
+- Another point,
+]
+
+
+
+
+.pull-right-wide[
+.center[
+<img src="Images/ABFU.png" alt="Girl in a jacket" width="1200" height="400">]
+]
+
+.small[Link to a relevant paper.]
+] <!--A-B-FU Design-->
+
+.panel[.panel-name[A-B-A-B]
+.pull-left-narrow[
+- Another point.
+- Another point.
+- Another point.
+- Another point.
+]
+
+.pull-right-wide[
+.center[
+<img src="Images/ABAB.png" alt="Girl in a jacket" width="1200" height="400">]
+]
+
+.small[Link to a relevant paper.]
+
+] <!--A-B-A-B-->
+
+.panel[.panel-name[A-B-A-C]
+.pull-left-narrow[
+- Another point.
+- Another point.
+- Another point.
+- Another point.
+]
+
+.pull-right-wide[
+.center[
+<img src="Images/ABAC.png" alt="Girl in a jacket" width="1200" height="400">]
+]
+
+.small[Link to a relevant paper.]
+] <!--A-B-A-C-->
+
+]
+
+???
+
+###  The A/B design(see the CBT example with an older adult in your pack) 
 
 + The A/B design is the most basic approach to single-case research. It involves a baseline period (termed A), during which measures are taken repeatedly, and a subsequent intervention period (termed B), during which measurement continues
 	+ Improvement on simple pre-post design
 	+ It is in terms of the research ideal the weakest strategy, because it leaves open so many alternative explanations for any observed improvement in symptoms
 	+ Not a SCED, but a quasi-experimental design
 
----
-#  Consider having a follow-up phase 
+###  Consider having a follow-up phase 
 
 + This would make it an A/B + FU design.
 	+ You can compare baseline to treatment and then stability of change in a treatment versus follow-up comparison.
 	+ This is a slightly stronger design.
 
----
-#  Withdrawal designs A/B/A(see the CAT for BPD example in your pack)  
 
-
-
----
-class: inverse
-background-image: url('assets/img/image6.emf')
-background-size: cover
-
-
----
-class: inverse
-background-image: url('assets/img/image5.emf')
-background-size: cover
-
-
----
-class: inverse
-background-image: url('assets/img/image4.emf')
-background-size: cover
-
-
----
-#  CHANGING CRITERION DESIGN 
-
-![](assets/img/image7.emf)
-
----
-#  ALTERNATIVE TREATMENT DESIGN: A/B/CSee the compulsive buying example ABC in your workshop pack  
+###  ALTERNATIVE TREATMENT DESIGN: A/B/CSee the compulsive buying example ABC in your workshop pack  
 
 Presence/opportunity to engage in two or more treatments – you would need to have a baseline, a phase of the UP and then another treatment.
 Which treatment is most effective?
 Problems: Is seldom employed for psychotherapy .
 
----
-#  THREATS TO THE VALIDITY OF YOUR SCED  
+###  Withdrawal designs A/B/A(see the CAT for BPD example in your pack)  
 
-1.	History (extraneous concurrent events)
-2.	Maturation (spontaneous recovery)
-3.	Testing (reactivity and the mere measurement effect)
-4.	Instrumentation (reliability)
-5.	Multiple intervention problems (can a psychotherapy be withdrawn)?
-6.	Instability
+###  CHANGING CRITERION DESIGN 
 
 ---
-#  Problems with withdrawal designs  
+
+# Withdrawl designs and Ethics
+
+Ask - am I being ethical and so are reversals or withdrawals appropriate?
+Important to know the methodological features before you start (see the later planning slide)
+
+###  Problems with withdrawal designs  
 
 Non-reversible treatments:
 therapeutic instructions (e.g. self-control / management strategies)
@@ -454,10 +781,6 @@ long-acting pharmacological interventions;
 altered environments;
 altered staff attitudes.
 Carry-over effects between the phases.
-
----
-#  Problems with withdrawal designs   
-
 Ethical / clinical problems:
 Prior agreement with client / staff needed,
 Client consent and general ethical issues
@@ -467,15 +790,28 @@ Problem of client's expectations and adherence to withdrawal
 Treatment holidays?
 
 ---
-#  The 8 treatment modules in the UP   
+
+#  Threats to validity
+
+1.	History (extraneous concurrent events)
+2.	Maturation (spontaneous recovery)
+3.	Testing (reactivity and the mere measurement effect)
+4.	Instrumentation (reliability)
+5.	Multiple intervention problems (can a psychotherapy be withdrawn)?
+6.	Instability
+
+---
+
+#  Mini interventions
 
 + Borkovec and Castonguay (2006) point out, the use of mini-interventions in which circumscribed components of treatment are actively manipulated is an underused research strategy, but one that offers the opportunity to increase our knowledge of basic change mechanisms in psychological treatments.
 	+ Separate out the modules on the time series graphs and test for an effect.
 	+ Submit the excel sheets as part of the submission showing each module and the scores on the idiographic measures during the phases
 
 ---
-#  Planning your design – what to consider; write a plan and take it to supervision  
+#  Planning your design
 
++what to consider; write a plan and take it to supervision  
 + The type of design
 	+ The number of sessions in each phase and module
 	+ How the phases will be sequenced with the modules
@@ -514,6 +850,7 @@ Ensure measures are suitable for SCED. In practice this usually means observatio
 Ensure rating scales are unambiguously worded and are anchored and well described.
 
 ---
+
 #  IDENTIFY MEASURES	 
 
 Ensure that diaries are well laid out and well presented. Scraps of paper do not value people and are seldom completed!
@@ -555,7 +892,14 @@ Share the findings with the client or the staff or both.
 Thank client and staff.
 
 ---
-#  What can you submit?  
+class: inverse
+
+# Course work specific information
+
+---
+
+
+##  What can you submit?  
 
 + The design of the submission needs to either be quasi-experimental or a SCED.  The design of quasi-single case experiments is A/B .
 	+ It is advantageous but not necessary to have a follow-up phase (i.e. an A/B-FU design) in which the idiographic measures continue to be collected and the nomothetic measure(s) are collected at the final follow-up.
@@ -575,7 +919,7 @@ References
 Appendices (not in the word count)
 
 ---
-#  Its helpful to know the reporting standards for SCED  
+#  Reporting standards for SCED  
 
 + Look in the resource pack and its there! (SCRIBE guidelines)
 	+ This will help you write inclusively.
@@ -674,368 +1018,12 @@ Play around with the methodology
 	+ Aware of different types of SCED design
 	+ How to design and implement measures
 
----
-#  Plan for Day 2 
-
-Evaluation and interpretation
-+ Visual analysis and interpretation
-	+ Statistical analysis and caveats
-	+ Assessing nomothetic outcomes
-	+ How it fits with your assignment
-	+ SCED analysis software and resources
-	+ Practical exercise: Have a go at some analysis!
-
----
-#  Key features of SCED analysis 
-
-+ SCEDs are fundamentally different to group-based research
-	+ Group research -> averages/combined findings/overall effects
-	+ SCED -> raw data/stability, variability, trends/individual effects
-+ Visual analysis – this is the main analysis!
-	+ Plot and analyse time series data visually
-	+ Statistical analysis
-	+ Use statistics to confirm visual analysis
-	+ Never interpret SCED statistics in isolation – viewed alongside visual plots
-	+ Be aware of the limitations of statistical analysis in SCED
-
----
-#  Visual analysis 
-
-+ Plot each idiographic measure in a time series graph
-Time points along the horizontal X axis
-Severity/score on vertical Y axis
-Depict phases with vertical lines intersecting the X axis
-![](assets/img/image8.png)
-
----
-#  Visual analysis 
-
-+ Add visual aids to help with interpretation
-a) Central tendency lines
-b) Trend lines
-c) Trend line stability bands
-d) SD bands/stability lines
-Draw a horizontal line at the level of the median/mean of data points in separate phases
-Can extend baseline lines into other phases
-Assess changes in level between phases – useful for immediate effects
-Krasny-Pacini & Evans (2018)
-![](assets/img/image9.jpeg)
-
----
-#  Visual analysis 
-
-+ Add visual aids to help with interpretation
-a) Central tendency lines
-b) Trend lines
-c) Trend line stability bands
-d) SD bands/stability lines
-Different methods for plotting trends
-+ Split-middle trend line - Draw line connecting the median of each half-phase
-	+ OLS regression trend line – Line drawn based on regression equation for each phase
-Determine if there are increasing or declining trends in phases
-Krasny-Pacini & Evans (2018)
-![](assets/img/image9.jpeg)
-
----
-#  Visual analysis 
-
-+ Add visual aids to help with interpretation
-a) Central tendency lines
-b) Trend lines
-c) Trend line stability bands
-d) SD bands/stability lines
-Suggested that trend lines only represent the data if 80% of the data points fall within an envelope bands around the trend line
-Assess representativeness and robustness of any trends
-Krasny-Pacini & Evans (2018)
-![](assets/img/image9.jpeg)
-
----
-#  Visual analysis 
-
-+ Add visual aids to help with interpretation
-a) Central tendency lines
-b) Trend lines
-c) Trend line stability bands
-d) SD bands/stability lines
-Calculate the mean and SD of each phase and draw bands 2 SD above and below the mean. Extend the bands into the comparison phase.
-Assess spread of data points within phases
-Krasny-Pacini & Evans (2018)
-![](assets/img/image9.jpeg)
-
----
-#  Interpreting visual plots 
-
-+ Interested in amount of overlap between data points in each phase
-	+ Less overlap = more likely to be differences between phases i.e. an effect!
-	+ Smaller variability within phases – easier to detect effects
-Few overlapping data points between phases = intervention has had an effect
-Lots of overlap between data points in the two phases – minimal effect of intervention
-
----
-class: inverse
-background-image: url('assets/img/image11.png')
-background-size: cover
 
 
----
-class: inverse
-background-image: url('assets/img/image10.png')
-background-size: cover
-
-
----
-class: inverse
-background-image: url('assets/img/image13.png')
-background-size: cover
-
-
----
-class: inverse
-background-image: url('assets/img/image12.png')
-background-size: cover
-
-
----
-#  How to evaluate visual SCED plots? 
-
-Cohen et al (2013) Single-Case Research Design in Pediatric Psychology: Considerations Regarding Data Analysis. Journal of Pediatric Psychology, 39, 124-127.
-![](assets/img/image14.emf)
-
----
-#  Interpreting baseline trends 
-
-+ Baseline may not be stable – always need to interpret intervention phase in the context of the baseline trend
-+ Statistic that allows us to assess and adjust for baseline trends – more on Tau/Tau-U later
-Source: https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf
-![](assets/img/image15.png)
-[https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf](https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf)
-
----
-
-.pull-left[![](assets/img/image16.png)]
-
-.pull-right[![](assets/img/image17.png)]
-[https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf](https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf)
-
----
-#  Statistical analysisIdiographic outcomes 
-
-+ Visual interpretation can be subjective so accompanying statistical analysis can aid interpretation
-However need to be aware;
-+ Can be influenced by number of time points/length of baseline
-	+ Can be misleading if there is baseline trend
-	+ Often difficult to compare
-	+ No consensus on best statistical approach/effect size metrics
-	+ Statistically significant changes may not have clinical significance
-	+ Assumptions of many statistical tests are violated in time-series data (lack of independence caused by autocorrelation )
-
----
-#  Why is autocorrelation a problem? 
-
-+ Autocorrelation (also known as serial dependence) is the degree of similarity between one data point in a time series and a previous lagged time point i.e. how correlated are the data points
-E.g. Weather is autocorrelated: the noon temperature on a Wednesday is predicted by what the noon temperature was on Tuesday, and to a lesser extent what the noon temperature was on Monday, or Sunday.
-+ Time series data is often autocorrelated – a persons behaviour/thoughts/feelings are not random from day to day so the data is not strictly independent
-	+ But most statistical tests are based on the assumption that data are independent
-+ So when autocorrelation is present this assumption is violated and increases the risk of a Type 1 error (false positive)
-
----
-#  SCED effect sizesMetrics for capturing between phase differences 
-
-+ Nonparametric (overlap) and parametric (SMD, LOR etc.)
-	+ Historic, more commonly reported simple overlap statistics are highly criticised (e.g., PND)
-	+ More recently developed overlap effect sizes have improved (e.g. Tau)
-	+ Good practice to calculate more than one overlap metric
-	+ Remember they are relative to whether the desired direction of improvement is shown by an increase or decrease in the measure
-		+ I.e., If desired outcome is increase , number of intervention data points that are higher than the baseline median
-		+ If desired outcome is decrease , number of intervention data points that are lower than the baseline median
-
----
-#  Non-overlap effect sizesComparing between phase differences 
-
-
-```{r tbl77, echo = FALSE}
-tbl77 <- tibble::tribble(
-~`Common effect sizes`, ~`Description *(if an increase is the direction of improvement)`, ~`By hand`,
-"Percentage exceeding the median (PEM)","Proportion of observations in phase B that improve upon the median of phase A. ","Yes",
-"Percentage of non-overlapping data (PND)","*Proportion of observations in the B phase that exceed the highest observation from the A phase. Severe limitations as influenced by no. of time points in the baseline.","Yes",
-"Percentage of all non-overlapping data (PAND)","*Proportion of observations remaining after removing the fewest possible number of observations from either phase so that the highest remaining point from the baseline phase is less than the lowest remaining point from the treatment phase.","Yes",
-"Nonoverlap of all pairs (NAP)","*Proportion of all pair-wise comparisons where the treatment phase observation exceeds the baseline phase observation, with pairs that are exactly tied getting a weight of 1/2.","No",
-"Improvement rate difference (IRD)","The robust phi coefficient corresponding to a certain 2×22×2 table that is a function of the degree of overlap between the observations each phase ","No",
-"Tau/Tau-U","Tau provides an effect estimate that does not make any adjustments for baseline trend. Tau-U is similar to Tau but includes an adjustment for baseline trends.","No"
-)
-
-kableExtra::kable_styling(knitr::kable(tbl77), font_size = 18)
+```{r output, include=F, echo=F}
+#xaringanBuilder::build_pdf("index.Rmd",
+ #        complex_slides = T, partial_slides = F)
 ```
 
----
-#  Example: Percentage exceeding the median (PEM) 
 
-+ Calculate median of baseline
-	+ =3
-	+ Count number of intervention phase datapoints that are above the median
-	+ =37 out of 42
-	+ Convert to a %
-	+ 37/42*100 = 88.10%
-PEM=88.10%
-![](assets/img/image18.tiff)
 
----
-#  Example: Percentage of all non-overlapping data (PAND) 
-
-+ Count how many extreme datapoints would need to be removed to there is no overlap
-	+ =6 (red circles)
-	+ Convert to %
-	+ 6/63*100=9.52%
-	+ Take the inverse
-	+ 100-9.52=90.48%
-PAND=90.48%
-![](assets/img/image19.tiff)
-
----
-#  Interpreting non-overlap effect sizes  
-
-+ Effects are provided as a proportion (or *100 to make a %)
-	+ The larger the effect size, the more effective the treatment
-	+ No agreed way to interpret the effect sizes
-+ But Scruggs & Mastropieri (1998) suggested the following interpretation;
-	+ > 0.90(or 90%) indicative of a very effective treatment
-	+ 0.70-0.89 (or 70-89%) represent moderate effectiveness
-	+ 0.50-0.69 (or 50-69%) are debatably effective
-	+ <0.50 (50%) are regarded as not effective
-
----
-#  Assessing and adjusting for baseline trend using Tau/Tau-U  
-
-+ Tau/Tau-U family of effect sizes calculates overlap even in highly variable data, corrects for trend and is robust to serial dependency/autocorrelation.
-	+ If baseline phases on ideographic outcomes are stable, then Tau ( τ AvsB )  is a better index of outcome, as opposed to Tau-U ( τ( AvsB )- Atrend ).
-+ Assess whether there is a significant trend in the baseline phase (Tau trend A )
-	+ If there is a significant baseline trend (p<.05), then an adjustment can be applied – corrects for the baseline trend for comparisons across phases
-	+ Calculate the Tau effect size for the difference between phases, either based on the corrected (Tau-U τ( AvsB )- Atrend ) or uncorrected data (Tau τ AvsB ).
-Online Tau calculator: http://ktarlow.com/stats/tau/ or Overlap Shiny app: https://manolov.shinyapps.io/Overlap/
-[http://ktarlow.com/stats/tau/](http://ktarlow.com/stats/tau/)
-[https://manolov.shinyapps.io/Overlap/](https://manolov.shinyapps.io/Overlap/)
-
----
-#  Comparing multiple phases  
-
-+ If you have more than two phases (i.e. any design other than A/B) then do pairwise comparisons of effects for each phase where it is of interest to see if there is a difference
-	+ E.g. AB-F/U design
-	+ Baseline (A) vs intervention (B)
-	+ Baseline (A) vs follow-up (FU)
-	+ See example published papers of different designs in your pack
-![](assets/img/image20.png)
-
----
-#  Assessing nomothetic outcomes 
-
-+ Supplement the idiographic findings by evaluating whether pre/post phase scores on nomothetic measures meet criteria for reliable and clinical significant change (Jacobson & Traux , 1991)
-	+ Has the client shown reliable change (RC) -  a reduction in scores that exceeds a change that could be due to measurement error
-		+ Use the reliability (Cronbach’s Alpha) of the measure and non-clinical and clinical. norms to calculate the amount of change that would be considered reliable
-	+ Has the client shown clinically significant change (CSC) – moved from above to below a clinical cut-off threshold
-		+ Can use defined clinical cut-off’s if available for the measure or can use clinical and non-clinical norms to calculate a threshold.
-		+ Bear in mind that process or generalisation measures may not make conceptual sense to assess clinically significant change (e.g. activation or quality of life)
-An Excel workbook & manual is provided in the Resource Pack that will allow you to do this!
-
----
-#  Evaluating nomothetic outcomes using reliable & clinically significant change 
-
-+ Nomothetic measure of general distress: CORE-OM
-	+ Connell et al (2007) paper reports psychometric evaluation including;
-		+ Reliability of the measures (Cronbach’s Alpha = 0.91)
-		+ Clinical and non-clinical norms (mean & SD)
-		+ Established reliable change and clinical cut-off thresholds
-	+ Pre-post change >= 6 shows Reliable Change
-	+ Pre-post score moving from above to below 10 shows Clinically Significant Change
-.pull-left[![](assets/img/image22.tiff)]
-
-.pull-right[![](assets/img/image21.tiff)]
-
----
-#  What do you need to include in your assignment? 
-
-VISUAL ANALYSIS
-+ Visual plots of every idiographic measure
-	+ Include phase trend lines and baseline median line
-SUMMARY DESCRIPTIVES
-+ Report means & SDs for each idiographic measure in each phase
-STATISTICAL ANALYSIS
-+ Assess for baseline trend (appropriate Tau correction if trend is present)
-	+ Report at least 3 non-overlap statistics
-	+ Assess autocorrelation in data (instructions provided in resources)
-NOMOTHETIC OUTCOMES
-+ Calculate whether RC and CSC have occurred for the primary nomothetic measure (main symptom or distress measure – CORE-OM?).
-	+ For the other nomothetic measures calculate RC and if relevant, calculate CSC.
-
----
-#  Deciding what software to use 
-
-+ Data input and management: Excel
-	+ Lots of the analysis can be done by hand (if you want)
-	+ More sophisticated techniques require software/web calculators (they will also do the simpler analyses/visualisation as well!)
-	+ See SingleCaseSoftware table for summary of some of the available programs/web calculators for SCED analysis
-		+ What you can do in each program
-		+ Benefits and limitations of each program
-		+ Complexity to learn
-
----
-#  Quick intro to SCED software 
-
-+ Microsoft Excel
-	+ Tau online calculator: http://ktarlow.com/stats/tau/
-	+ Jepusto Shiny app: https://jepusto.shinyapps.io/SCD-effect-sizes/
-	+ SCDA Shiny app: https://tamalkd.shinyapps.io/scda/
-	+ Overlap Shiny app: https://manolov.shinyapps.io/Overlap/
-[http://ktarlow.com/stats/tau/](https://jepusto.shinyapps.io/SCD-effect-sizes/)
-[https://jepusto.shinyapps.io/SCD-effect-sizes/](http://ktarlow.com/stats/tau/)
-[https://tamalkd.shinyapps.io/scda/](https://manolov.shinyapps.io/Overlap/)
-[https://manolov.shinyapps.io/Overlap/](https://tamalkd.shinyapps.io/scda/)
-
----
-
-![](assets/img/image23.emf)
-
----
-#  SCED Resource Pack 
-
-![](assets/img/image24.tiff)
-
----
-#  Practical task – have a go at SCED analysis 
-
-+ We will divide you into groups of 4
-	+ Two example datasets – each group will be assigned a dataset
-		+ Adult mental health setting (AB-F/U)
-		+ Adult inpatient setting (AB)
-	+ Each has a guide to walk you through conducting and reporting the analysis in different types of software
-	+ There are multiple idiographic measures – you don’t have to do all of them in the practical – the examples are provided so you have a guide for the full analysis process you will need to do for your assignment
-		+ You may want to divide the measures up between your group
-
----
-#  Feedback your findings 
-
-+ Feedback–informal overview of findings (~5-10 mins per group)
-Things to report on;
-+ Visual plot of each idiographic measure
-	+ Assess whether there is a baseline trend using Tau/Tau-U
-	+ Calculate x3 non-overlap statistics (Tau/Tau-U counts as one!)
-	+ Descriptive statistics for each phase (means and SDs)
-	+ RCSI analysis of nomothetic outcomes
-PowerPoint template provided to copy and paste your results into!
-+ Don’t worry too much about having a detailed interpretation!
-	+ This is about getting you to practice having a go so we can troubleshoot any problems now and a way of showing the different resources and what they are able to do
-	+ Plus each dataset has a summary of the results so you can sense check if you have produced the same findings – just don’t cheat!
-
----
-#  Feedback 
-
-+ How did you find using the different SCED software?
-	+ Any problems?
-	+ Any questions/queries?
-	+ Anything you are concerned/unsure about?
-
----
-name: last-slide
-#  References 
-
-+ Cohen et al (2013) Single-Case Research Design in Pediatric Psychology: Considerations Regarding Data Analysis. Journal of Pediatric Psychology, 39, 124-127.
-	+ Krasny-Pacini & Evans (2018) Single-case experimental designs to assess intervention effectiveness in rehabilitation: A practical guide. Annals of Physical and Rehabilitation Medicine, 61, 164–179

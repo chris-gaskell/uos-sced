@@ -1,7 +1,14 @@
+li span {
+  position: relative;
+  left: -0px;
+  line-height: 0.7;
+}
+
 svg:hover {
   fill: var(--my-yellow);
   border-bottom:      2px solid var(--my-yellow);
 }
+
 
 .split-three>.column:first-of-type {width: 33.33333333333%; height:50%; position: absolute; top: 30px; left: 0; }
 .split-three>.column:nth-of-type(2) {width: 33.33333333333%; height:50%; position: absolute; top: 30px; left: 33.33333333333%;}
@@ -52,10 +59,12 @@ svg:hover {
 /*-- LINKS/ANCHORS --*/
 a {
   color: lightblue;
+  text-decoration: underline;
 }
 
 a:hover { color: orange;
-          border-bottom: red;
+          text-decoration: none;
+
           }
 
 /*-- HEADINGS --*/
@@ -117,7 +126,7 @@ hr {
 }
 
 /*-- Headings (inverse) --*/
-.inverse h1, .inverse h2, .inverse h3 { color: var(--PaleGrey); }
+.inverse h1, .inverse h2, .inverse h3 { color: var(--my-yellow); }
 
 .inverse a {
   color:              var(--PaleGrey);
@@ -136,7 +145,7 @@ hr {
 
 /*-- Small text --*/
 .small {
-  font-size: 70%;
+  font-size: 80%;
 }
 /*-- Horizontal bars (inverse) --*/
 .inverse hr { background-color: var(--PaleGrey); }
@@ -146,8 +155,8 @@ hr {
 /*-- Footnote --*/
 .footnote {
   position:           absolute;
-  bottom:             2em;
-  padding-right:      4em;
+  bottom:             4em;
+  padding-right:      3em;
   font-size:          70%;
   line-height:        1em;
 }
@@ -233,19 +242,26 @@ content: "";
 .title-slide {
   /*background-color:   #E7EDF8;*/
   background-color:   var(--my-blue);
-  background-image: url(https://www.rehab.research.va.gov/jour/2012/491/images/barnett491f02lb.jpg);
+  background-image: url(images/title.png);
+  background-position: 50% 95%;
+  background-size: 90% 55%;
 
   color:              white;
 }
 /*-- Headings --*/
 .title-slide h1 {
-  font-size:          2.4em;
+  font-size:          1.7em;
   font-weight:        600;
   color:              white;
 }
 .title-slide h2 {
   color:              var(--my-yellow);
-  font-size:          1.4em;
+  font-size:          1em;
+}
+
+.title-slide h3 {
+  color:              var(--my-yellow);
+  font-size:          0.8em;
 }
 
 /*-- Custom class for the about-me slide --*/
@@ -284,6 +300,8 @@ content: "";
 .my-coral   { color:  var(--my-coral) }
 .my-pink    { color:  var(--my-pink) }
 .my-hot-pink { background-color: #ff69b4 }
+.my-hot-red { background-color: #f3172d }
+.my-hot-blue { background-color: var(--Blue) }
 
 /*-- PROGRESS BAR IN FOOTER --*/
 /* https://github.com/yihui/xaringan/wiki/Progressbar */

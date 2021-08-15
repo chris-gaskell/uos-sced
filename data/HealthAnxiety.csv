@@ -1,0 +1,253 @@
+﻿case,phase,values,mt
+Checking Episodes,A,3,1
+Checking Episodes,A,6,2
+Checking Episodes,A,2,3
+Checking Episodes,A,9,4
+Checking Episodes,A,2,5
+Checking Episodes,A,5,6
+Checking Episodes,A,7,7
+Checking Episodes,A,1,8
+Checking Episodes,A,3,9
+Checking Episodes,A,6,10
+Checking Episodes,A,1,11
+Checking Episodes,A,3,12
+Checking Episodes,A,10,13
+Checking Episodes,A,4,14
+Checking Episodes,A,4,15
+Checking Episodes,A,4,16
+Checking Episodes,A,1,17
+Checking Episodes,A,6,18
+Checking Episodes,A,1,19
+Checking Episodes,A,2,20
+Checking Episodes,A,4,21
+Checking Episodes,B,1,22
+Checking Episodes,B,2,23
+Checking Episodes,B,2,24
+Checking Episodes,B,5,25
+Checking Episodes,B,2,26
+Checking Episodes,B,1,27
+Checking Episodes,B,2,28
+Checking Episodes,B,1,29
+Checking Episodes,B,3,30
+Checking Episodes,B,1,31
+Checking Episodes,B,1,32
+Checking Episodes,B,1,33
+Checking Episodes,B,1,34
+Checking Episodes,B,4,35
+Checking Episodes,B,2,36
+Checking Episodes,B,0,37
+Checking Episodes,B,1,38
+Checking Episodes,B,4,39
+Checking Episodes,B,2,40
+Checking Episodes,B,4,41
+Checking Episodes,B,1,42
+Checking Episodes,B,1,43
+Checking Episodes,B,0,44
+Checking Episodes,B,1,45
+Checking Episodes,B,2,46
+Checking Episodes,B,1,47
+Checking Episodes,B,1,48
+Checking Episodes,B,1,49
+Checking Episodes,B,5,50
+Checking Episodes,B,1,51
+Checking Episodes,B,2,52
+Checking Episodes,B,1,53
+Checking Episodes,B,0,54
+Checking Episodes,B,2,55
+Checking Episodes,B,1,56
+Checking Episodes,B,1,57
+Checking Episodes,B,1,58
+Checking Episodes,B,3,59
+Checking Episodes,B,2,60
+Checking Episodes,B,0,61
+Checking Episodes,B,2,62
+Checking Episodes,B,1,63
+Checking Time,A,70,1
+Checking Time,A,80,2
+Checking Time,A,35,3
+Checking Time,A,205,4
+Checking Time,A,20,5
+Checking Time,A,55,6
+Checking Time,A,45,7
+Checking Time,A,10,8
+Checking Time,A,40,9
+Checking Time,A,100,10
+Checking Time,A,10,11
+Checking Time,A,50,12
+Checking Time,A,150,13
+Checking Time,A,60,14
+Checking Time,A,480,15
+Checking Time,A,60,16
+Checking Time,A,30,17
+Checking Time,A,120,18
+Checking Time,A,20,19
+Checking Time,A,45,20
+Checking Time,A,60,21
+Checking Time,B,20,22
+Checking Time,B,30,23
+Checking Time,B,60,24
+Checking Time,B,150,25
+Checking Time,B,50,26
+Checking Time,B,20,27
+Checking Time,B,30,28
+Checking Time,B,20,29
+Checking Time,B,40,30
+Checking Time,B,10,31
+Checking Time,B,5,32
+Checking Time,B,10,33
+Checking Time,B,10,34
+Checking Time,B,100,35
+Checking Time,B,35,36
+Checking Time,B,0,37
+Checking Time,B,10,38
+Checking Time,B,120,39
+Checking Time,B,20,40
+Checking Time,B,10,41
+Checking Time,B,5,42
+Checking Time,B,3,43
+Checking Time,B,0,44
+Checking Time,B,10,45
+Checking Time,B,40,46
+Checking Time,B,20,47
+Checking Time,B,10,48
+Checking Time,B,30,49
+Checking Time,B,10,50
+Checking Time,B,2,51
+Checking Time,B,20,52
+Checking Time,B,5,53
+Checking Time,B,0,54
+Checking Time,B,30,55
+Checking Time,B,10,56
+Checking Time,B,5,57
+Checking Time,B,2,58
+Checking Time,B,30,59
+Checking Time,B,6,60
+Checking Time,B,0,61
+Checking Time,B,20,62
+Checking Time,B,10,63
+Hours Asleep,A,4,1
+Hours Asleep,A,7,2
+Hours Asleep,A,6,3
+Hours Asleep,A,13,4
+Hours Asleep,A,3,5
+Hours Asleep,A,8,6
+Hours Asleep,A,12,7
+Hours Asleep,A,9,8
+Hours Asleep,A,6,9
+Hours Asleep,A,4,10
+Hours Asleep,A,3,11
+Hours Asleep,A,13,12
+Hours Asleep,A,12,13
+Hours Asleep,A,9,14
+Hours Asleep,A,0,15
+Hours Asleep,A,15,16
+Hours Asleep,A,12,17
+Hours Asleep,A,7,18
+Hours Asleep,A,8,19
+Hours Asleep,A,5,20
+Hours Asleep,A,6,21
+Hours Asleep,B,8,22
+Hours Asleep,B,11,23
+Hours Asleep,B,12,24
+Hours Asleep,B,13,25
+Hours Asleep,B,12,26
+Hours Asleep,B,6,27
+Hours Asleep,B,8,28
+Hours Asleep,B,9,29
+Hours Asleep,B,12,30
+Hours Asleep,B,8,31
+Hours Asleep,B,15,32
+Hours Asleep,B,4,33
+Hours Asleep,B,12,34
+Hours Asleep,B,5,35
+Hours Asleep,B,10,36
+Hours Asleep,B,8,37
+Hours Asleep,B,9,38
+Hours Asleep,B,12,39
+Hours Asleep,B,10,40
+Hours Asleep,B,8,41
+Hours Asleep,B,9,42
+Hours Asleep,B,10,43
+Hours Asleep,B,10,44
+Hours Asleep,B,9,45
+Hours Asleep,B,8,46
+Hours Asleep,B,10,47
+Hours Asleep,B,7,48
+Hours Asleep,B,8,49
+Hours Asleep,B,7,50
+Hours Asleep,B,9,51
+Hours Asleep,B,8,52
+Hours Asleep,B,10,53
+Hours Asleep,B,9,54
+Hours Asleep,B,8,55
+Hours Asleep,B,8,56
+Hours Asleep,B,9,57
+Hours Asleep,B,8,58
+Hours Asleep,B,9,59
+Hours Asleep,B,10,60
+Hours Asleep,B,9,61
+Hours Asleep,B,10,62
+Hours Asleep,B,11,63
+Food Intake Satisfaction,A,4,1
+Food Intake Satisfaction,A,2,2
+Food Intake Satisfaction,A,4,3
+Food Intake Satisfaction,A,2,4
+Food Intake Satisfaction,A,4,5
+Food Intake Satisfaction,A,3,6
+Food Intake Satisfaction,A,5,7
+Food Intake Satisfaction,A,4,8
+Food Intake Satisfaction,A,3,9
+Food Intake Satisfaction,A,2,10
+Food Intake Satisfaction,A,4,11
+Food Intake Satisfaction,A,4,12
+Food Intake Satisfaction,A,2,13
+Food Intake Satisfaction,A,4,14
+Food Intake Satisfaction,A,3,15
+Food Intake Satisfaction,A,2,16
+Food Intake Satisfaction,A,3,17
+Food Intake Satisfaction,A,4,18
+Food Intake Satisfaction,A,4,19
+Food Intake Satisfaction,A,4,20
+Food Intake Satisfaction,A,4,21
+Food Intake Satisfaction,B,4,22
+Food Intake Satisfaction,B,3,23
+Food Intake Satisfaction,B,2,24
+Food Intake Satisfaction,B,2,25
+Food Intake Satisfaction,B,3,26
+Food Intake Satisfaction,B,4,27
+Food Intake Satisfaction,B,4,28
+Food Intake Satisfaction,B,4,29
+Food Intake Satisfaction,B,3,30
+Food Intake Satisfaction,B,3,31
+Food Intake Satisfaction,B,3,32
+Food Intake Satisfaction,B,2,33
+Food Intake Satisfaction,B,2,34
+Food Intake Satisfaction,B,3,35
+Food Intake Satisfaction,B,5,36
+Food Intake Satisfaction,B,4,37
+Food Intake Satisfaction,B,3,38
+Food Intake Satisfaction,B,3,39
+Food Intake Satisfaction,B,3,40
+Food Intake Satisfaction,B,4,41
+Food Intake Satisfaction,B,4,42
+Food Intake Satisfaction,B,4,43
+Food Intake Satisfaction,B,4,44
+Food Intake Satisfaction,B,3,45
+Food Intake Satisfaction,B,5,46
+Food Intake Satisfaction,B,4,47
+Food Intake Satisfaction,B,4,48
+Food Intake Satisfaction,B,3,49
+Food Intake Satisfaction,B,4,50
+Food Intake Satisfaction,B,4,51
+Food Intake Satisfaction,B,4,52
+Food Intake Satisfaction,B,5,53
+Food Intake Satisfaction,B,4,54
+Food Intake Satisfaction,B,3,55
+Food Intake Satisfaction,B,4,56
+Food Intake Satisfaction,B,4,57
+Food Intake Satisfaction,B,4,58
+Food Intake Satisfaction,B,4,59
+Food Intake Satisfaction,B,4,60
+Food Intake Satisfaction,B,4,61
+Food Intake Satisfaction,B,5,62
+Food Intake Satisfaction,B,4,63

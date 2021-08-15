@@ -1,0 +1,117 @@
+---
+title: "Plots"
+author: "Chris Gaskell"
+date: "14/08/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(scan)
+library(tidyverse)
+library(readxl)
+```
+
+
+```{r data, include=FALSE}
+
+dat <- list(
+          dat.AB = readxl::read_xls("data/data.xls", sheet = "AB"),
+          dat.ABFU = readxl::read_xls("data/data.xls", sheet = "ABFU"),
+          dat.ABABFU = readxl::read_xls("data/data.xls", sheet = "ABABFU"),
+          dat.ABCFU = readxl::read_xls("data/data.xls", sheet = "ABCFU"),
+          dat.carer = readxl::read_xls("data/data.xls", sheet = "Carer"),
+          dat.stability = readxl::read_xls("data/data.xls", sheet = "Stability")
+        )
+
+sc.dat <- scan::readSC.excel("data/data.xls",)
+
+```
+
+
+```{r AB, echo=FALSE}
+
+newstyle <- style_plot(fill = "grey95", grid = "lightblue", pch = 16)
+
+plotSC(sc.dat$Reassurance, style = newstyle,
+       xinc = 5, main = "A-B Single Case Design",
+       xlab = "Days of the study",
+       ylab = "Reassurance seeking behaviours",
+       phase.names = c("Baseline", "CBT")
+          )
+    
+```
+
+```{r ABFU, echo=FALSE}
+
+plotSC(sc.dat$Compassion, style = newstyle,
+       xinc = 5, main = "A-B-FU Single Case Design",
+       xlab = "Days of the study",
+       ylab = "Self rating of self compassion",
+       phase.names = c("Baseline", "CAT", "Follow Up")
+          )
+    
+```
+
+```{r ABAB, echo=FALSE}
+
+plotSC(sc.dat$Shame, style = newstyle,
+       xinc = 5, main = "A-B-A-B Single Case Design",
+       xlab = "Days of the study",
+       ylab = "Self rating of shame",
+       phase.names = c("Baseline", "CBT", "Withdrawal", "CBT", "Follow Up")
+          )
+    
+```
+
+```{r ABAC, echo=FALSE}
+
+plotSC(sc.dat$Depression, style = newstyle,
+       xinc = 5, main = "A-B-A-C Single Case Design",
+       xlab = "Days of the study",
+       ylab = "Self rating of depression",
+       phase.names = c("Baseline", "BT", "Withdrawal", "CBT", "Follow Up")
+          )
+    
+```
+
+```{r plot-stability, echo=FALSE}
+plotSC(sc.dat$Sleep, style = newstyle,
+       xinc = 5, xlab = "Days of the study",
+       ylab = "Hour asleep",
+       phase.names = c("Baseline", "Sleep Hygiene")
+          )
+```
+
+```{r title-plot, include=F}
+Plot <- ggplot(dat$dat.stability,
+          aes(x = mt, y = values)) +
+          geom_line(aes(color = phase,
+                )) 
+
+```
+
+```{r title-plot2, include=T}
+Plot <- ggplot(dat$dat.stability, aes(x = mt, y = values)) +
+          geom_line(aes(color = phase), color="#e5bf00", fill = "red") +
+          scale_color_manual(values = c("#e5bf00"))+
+          jtools::theme_apa()+
+          ylab("1-100 Rating Scale")+
+          xlab("Measurement days across the study") +
+          # ggtitle("Time series graph - alternative treatment for major depression") +
+  geom_vline(xintercept = 28, color = "black", size=.5, linetype="dashed")+
+     annotate("text", x = .5*(0+25), y = 18, label = "Baseline", size=6, colour = "#122140") +
+     annotate("text", x = .5*(25+70), y = 18, label = "CBT", size=6, colour = "#122140")
+
+Plot <- Plot + theme(
+            plot.background = element_rect(fill = "#122140", colour = NULL, size = 0),
+            panel.background =  element_rect(fill = "white", colour = "white"),
+            text = element_text(colour = "white"),
+            axis.text = element_text(colour = "#e5bf00", size = rel(1))
+            )
+
+Plot <- Plot + geom_point(colour = "#e5bf00")
+
+Plot
+
+```

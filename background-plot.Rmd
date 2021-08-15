@@ -5,7 +5,44 @@ date: "07/08/2021"
 output: html_document
 ---
 
-```{r}
-
-
+```{r libs}
+library(scan)
+library(tidyverse)
+library(xaringan)
+library(xaringanthemer)
 ```
+
+```{r data}
+dat <- read.csv("CWS.csv")
+dat2 <- scan::readSC("CWS.csv")
+```
+
+```{r scan-plot}
+newstyle <- style_plot(style = c("big"), col.grid = "#e5bf00", col.fill = "#e5bf00", fill = "#e5bf00", fill.bg = "white", pch = 16)
+plotSC(dat2$SadHappy, style = newstyle, xinc = 20, phase.names = c("Baseline", "BA", "Withdrawal", "CBT", "Follow Up"), xlab = "Days of study", ylab = "Happiness score (0-100)", case.names = "Happiness")
+```
+
+```{r ggplot-plot}
+dat <- dat %>% filter(case == "SadHappy")
+
+Plot <- ggplot(dat, aes(x = mt, y = values)) +
+          geom_line(aes(color = case), color="#e5bf00", fill = "red") +
+          scale_color_manual(values = c("#e5bf00"))+
+          jtools::theme_apa()+
+          ylab("1-100 Rating Scale")+
+          xlab("Measurement days across the study")+
+          ggtitle("Time series graph - alternative treatment for major depression") +
+  geom_vline(xintercept = 28, color = "white", size=.1)+
+  geom_vline(xintercept = 70, color = "white", size=.1)+
+  geom_vline(xintercept = 98, color = "white", size=.1)+
+  geom_vline(xintercept = 140, color = "white", size=.1) +
+     annotate("text", x = .5*(0+25), y = 100, label = "Baseline", size=4, colour = "#e5bf00") +
+     annotate("text", x = .5*(25+70), y = 100, label = "BA", size=4, colour = "#e5bf00") +
+     annotate("text", x = .5*(70+98), y = 100, label = "Withdraw", size=4, colour = "#e5bf00") +
+     annotate("text", x = .5*(98+140), y = 100, label = "CBT", size=4, colour = "#e5bf00") +
+     annotate("text", x = .5*(140+200), y = 100, label = "Follow-up", size=4, colour = "#e5bf00")
+Plot + theme(plot.background = element_rect(fill=  "#122140"), panel.background =  element_rect(fill = "#122140", colour = "white"), text = element_text(colour = "white"),  axis.text = element_text(colour = "#e5bf00", size = rel(1)))
+```
+
+
+
