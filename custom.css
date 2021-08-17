@@ -58,7 +58,7 @@ svg:hover {
 
 /*-- LINKS/ANCHORS --*/
 a {
-  color: lightblue;
+  color: Darkblue;
   text-decoration: underline;
 }
 
@@ -135,6 +135,21 @@ hr {
 
 .inverse a:hover { color: var(--my-yellow); border-bottom: none;}
 
+
+/*-- Footnote --*/
+.inverse footnote {
+  position:           absolute;
+  bottom:             2em;
+  padding-right:      3em;
+  padding-left:       0em;
+  font-size:          80%;
+  line-height:        1em;
+}
+
+
+
+
+
 /*-- left-column for the 2-column layout --*/
 .inverse .left-column h2:last-of-type, .inverse .left-column h3:last-child {
   color: var(--PaleGrey);
@@ -155,9 +170,10 @@ hr {
 /*-- Footnote --*/
 .footnote {
   position:           absolute;
-  bottom:             4em;
+  bottom:             2em;
   padding-right:      3em;
-  font-size:          70%;
+  padding-left:       1em;
+  font-size:          90%;
   line-height:        1em;
 }
 
@@ -301,7 +317,11 @@ content: "";
 .my-pink    { color:  var(--my-pink) }
 .my-hot-pink { background-color: #ff69b4 }
 .my-hot-red { background-color: #f3172d }
-.my-hot-blue { background-color: var(--Blue) }
+.my-hot-blue { background-color: var(--my-blue)}
+.my-hot-green { background-color: blue;
+opacity: 0.85;}
+.my-hot-white { background-color: white; }
+
 
 /*-- PROGRESS BAR IN FOOTER --*/
 /* https://github.com/yihui/xaringan/wiki/Progressbar */

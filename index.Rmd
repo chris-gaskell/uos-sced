@@ -94,34 +94,62 @@ NHS Foundation Trust]
 ]]
 
 ---
-name: contents-slide
-class: inverse
+class: center, top, split-three, inverse
 background-image: url(https://rin.org.uk/resource/resmgr/nav21/nav21_map.png)
-background-position:80% 60%
-background-size: 350px 300px
+background-position:8% 70%
+background-size: 375px 300px
+
+
+.column.bg-main1[.content[.right[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
 
 # `r icons::icon_style(icons::fontawesome("compass"), scale = 1, fill = "var(--my-yellow)")` Navigating these slides
 
-.pull-left[
+]]]
+
+--
+
+.column.bg-main2[.content[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+.Large[.bold[
 ### Day 1
-- [Aims for the workshop](#aims-slide)
-- [Intro to SCEDs](#intro-slide)
-- [Why use SCEDs](#why-slide)
-- [Types of SCEDs](#type-slide)
-- [Measuring change](#measure-slide)
-- [Setting it up](#set-up-slide)
+[Aims + Intro](#aims-slide)
 
+[Why](#why-slide)
+
+[Measures](#measures-slide)
+
+[Designs](#designs-slide)
+
+[Setting it up](#stages-slide)]
+]]]
+
+--
+
+.column.bg-main3[.content[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+.Large[.Bold[
 ### Day 2
-- [Analysis](#analysis-slide)
-- [Practice](#practice-slide)
-- [Resources](#resources-slide)
+
+.bold[
+[Analysis](#analysis-slide)
+
+[Practice](#practice-slide)
+
+[Resources](#resources-slide)]
+
+]]]]
+
+--
+
+.footnote[.Large[**Note**: all underlined
+.white[.underline[white]] and
+.my-hot-white[.my-blue[.underline[blue]]] text are hyperlinks!]
 ]
 
-.pull-right[
-.footnote[**Note**: all underlined
-.white[.underline[white]] and
-.red[.underline[red]] text are hyperlinks!]\
-]
 ---
 
 name: contents-slide
@@ -142,7 +170,11 @@ background-size:
 .large[.white[Scribble on slides] - Press 's'.]
 
 .footnote[
-`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`
+.Large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
+This presentation is also available as a <a href="https://chris-gaskell.github.io/uos-sced/output/index.pdf">pdf</a>.
+
+
+.Large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
 If you find any problems with these slides then e-mail
 <a href="mailto:cgaskell1@sheffield.ac.uk">Chris</a>.
 ]
@@ -156,54 +188,62 @@ If you find any problems with these slides then e-mail
     <img src="https://psyteachr.github.io/hack-your-data/img/rmarkdown.png" alt="Trulli" style="width:45%">
   <figcaption>.small[Slides made using Xaringan and R Markdown.]</figcaption>
 </figure>
+
 ]]
 
 
 ---
 layout: true
-name:aims-slide
 background-image: url(uos.png), url(pearls.jpg)
 background-position:5% 95%, 98% 96%
 background-size: 110px 50px, 10%
 ---
+name: aims-slide
 
 #  Aims of the workshop
 
-+ To become .blue[familiar] with the requirements of the single-case experimental design.
-+ To appreciate the linkage between .blue[practice-based evidence] and single case methodology.
++ Become .blue[familiar] with the requirements of the SCED.
++ Appreciate links between .blue[practice-based evidence] and SCED methodology.
 + To .blue[understand] the basic features of the available designs.
-+ To consider ways of making single case work more accessible to your client.
-+ To appreciate the .blue[potential] of single case methodology.
++ To consider ways of engaging clients in SCED.
++ To appreciate the .blue[potential] of SCED methodology.
 
 
 ---
 #  Aims of the workshop
 
-+ To review the application of single-case methodology within clinical research and practice.
-+ To examine .blue[practical difficulties] arising from the implementation of single case studies.
-+ To provide practical experience of design and analysis of single case studies.
-+ To provide a forum for you to discuss foreseen problems associated with single case design and to problem solve these with you.
++ .blue[Review the application] of SCED methodology within clinical research and practice.
++ Consider potential .blue[practical difficulties] in implementation of SCED.
++ Provide .blue[practical experience] of design and analysis.
++ Foresee potential difficulties and .blue[trouble-shoot].
 
 ---
 #  Hopes for the workshop
 
-## .can-edit.key-firstSlideTitleuniquw[include...]
+## Include `r icons::icon_style(icons::fontawesome("pen"), scale = 0.8, fill = "grey")`
+.can-edit.key-firstSlideTitleunique[
+- Write 
+- Here
+- And
+- We
+- Will
+- Come
+- Back
+]
 
 ---
 #  A note on the assignment
 
 .pull-left[
-.small[
-+ Conduct a SCED using delivery of the Unified Protocol.
-  + Any SCED design is permissible (we will teach you all the methods). 
-  + Submit via Unidrive (not Turnitin).
-  + Ethical approval for this in place
-+ Patient information and consent forms are on MUSE
-  + Include signed consent form in appendix.
-]]
++ Conduct a SCED of psychological treatment.
++ Any design is permissible (we will teach you all the methods). 
++ Submit via Unidrive (not Turnitin).
++ Ethical approval for this in place
++ Patient information & consent forms on MUSE (for your appendix).
+]
 
 
-.pull-right[<img src="https://i.imgflip.com/2f6v9k.jpg" alt="Trulli" style="width:90%">
+.pull-right[<img src="https://i.imgflip.com/2f6v9k.jpg" alt="Trulli" alt="Girl in a jacket" width="75%" height="75%">
 ]
 
 ---
@@ -242,7 +282,7 @@ background-size: 70% 30%
 
 ???
 
-+ (I.e. introduce/remove/change treatment).
++ (i.e., introduce/remove/change treatment).
 + Experimental = 3+ manipulations
 + Less than this = quasi experimental.
 
@@ -279,17 +319,8 @@ so that the ‘natural course’ of the outcome is known.
 --
 
 .pull-right[
-<img src="https://media.makeameme.org/created/one-does-not-5ac35f.jpg" alt="Girl in a jacket" width="290" height="250">
+<img src="https://media.makeameme.org/created/one-does-not-5ac35f.jpg" alt="Girl in a jacket" width="370" height="300">
 ]
-
-
----
-#  Treatment  
-
-+ Involves the introduction (and/or withdrawal) of the UP so that its effect on the idiographic measures can be assessed
-	+ The UP you deliver needs to be well specified
-	+ Take all of this – the design and the intervention to supervision.
-	+ Tape a treatment session and get your supervisor to rate your clinical competency with the CTS-R and you can report that in your method – that would add to the write up (but isn’t a must do).
 
 ---
 
@@ -301,21 +332,21 @@ so that the ‘natural course’ of the outcome is known.
 + Within client change rather than across client change.
 
 ---
+name: why-slide
 class: inverse, middle, center
 layout: false
 
-# Why use SCMs? 
+# Why use SCEDs? 
 
 
 ---
 layout: true
-name:aims-slide
 background-image: url(uos.png), url(pearls.jpg)
 background-position:5% 95%, 98% 96%
 background-size: 110px 50px, 10%
 ---
 
-#  So why use SCMs? 
+#  So why use SCEDs? 
 
 --
 
@@ -336,6 +367,11 @@ background-size: 110px 50px, 10%
 ---
 # Status of SCED as a research tool? 
 
+.pull-left-narrow[<img src="https://i.vimeocdn.com/portrait/6782840_640x640" alt="Girl in a jacket" width="200" height="150">
+
+<img src="https://pbs.twimg.com/media/E5lYBTZUYAEJucE?format=png&name=small" alt="Girl in a jacket" width="200" height="150">]
+
+.pull-right-wide[
 + Highly .blue[accessible] for clinicians.
 + Growing .blue[popularity].
   + Single case texts/books regularly published.
@@ -345,14 +381,32 @@ background-size: 110px 50px, 10%
   + e.g. CBT and panic/psychosis rooted in SCED evidence.
   + RCTs are not the only option.
 + Rapidly developing field.
-  + New analytical methods + designs.
-
-.pull-right[
-<img src="https://i.vimeocdn.com/portrait/6782840_640x640" alt="Girl in a jacket" width="200" height="150">]
+  + New analytical methods + designs.]
 
 
 ---
+background-image: url(https://johnlewis.scene7.com/is/image/JohnLewis/237518072)
+background-position: -20% 30%
+background-size: 600px 600px
+
+.pull-right-wide[
 # Hour Glass Model
+
+Three stage research cycle for evidencing treatment (Salkovskis, 1995):
+1. Practice based pilot studies on small *n* in routine services.
+2. Highly controlled trials efficacy studies (e.g. RCTs).
+3. Implementation studies (return treatment to routine settings.)
+
+.center[
+<img src="https://www.babcp.com/portals/0/Images/Members/Picture2.png?ver=2021-03-11-165551-763" alt="Girl in a jacket" width="600" height="265">
+<figcaption class="caption">Figure taken from interesting
+<a href="https://bpspsychub.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/papt.12278">BABCP article</a>
+</figcaption>
+
+]
+
+]
+
 
 ---
 background-image: url(https://www.its.ws/PublishingImages/Quality/Quality-data.jpg)
@@ -373,47 +427,55 @@ background-size: 45% 65%
 background-image: url(https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc2VhcmNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
 background-position:85% 85%
 background-size: cover
-class: center, top
+class: center, bottom
 
-##  .white[.my-hot-red[Being a Scientific Practitioner]]
+##  .my-yellow[.my-hot-blue[Being a Scientific Practitioner]]
 
 ---
 
 # Scientific Practitioner
 
-.center[
+.left[
 Most useful contribution of SCED?
 
-Ability to answer questions that are .blue[clinically relevant variants on those of evidence-based practice.]]
+Ability to answer questions that are .red[clinically relevant variants on those of evidence-based practice.]]
 
 --
 
 .pull-left[
-.white[.my-hot-blue[**"Does this evidence-based treatment work for this particular client, who differs in some way from the sample characteristics of the evidence base?"**
-]]]
+<figure class="quote">
+  <blockquote>
+  .blue[
+  .large[
+    “Does this evidence-based treatment work for this particular client, who differs in some way from the sample characteristics of the evidence base?".]]
+  <figcaption>
+</figure>
+]
 
 --
 
 .pull-right[
-<img src="https://www.lanternaeducation.com/wp-content/uploads/2017/01/how-does-it-work-meme.jpg" alt="Girl in a jacket" width="290" height="200">]
+<img src="https://www.lanternaeducation.com/wp-content/uploads/2017/01/how-does-it-work-meme.jpg" alt="Girl in a jacket" width="380" height="260">]
 
 
 ---
 #  What’s the advantage of SCED? 
 
+.pull-left[
 + Low cost
 + Low infrastructure
 + Small ‘turning circle’
 + Easily adaptable + flexible
 + Collaborative (if done right)
-
+]
 --
 
-.large[.white[.my-hot-blue[**Available for all clinicians to use!**]]].
+.pull-right[
+.Large[.white[.my-hot-blue[**Available for all clinicians to use!**]]].
 
---
 .center[
-<img src="https://www.worldoffemale.com/wp-content/uploads/2019/04/you-can-do-it-meme-72.jpg" alt="Girl in a jacket" width="290" height="150">]
+<img src="https://www.worldoffemale.com/wp-content/uploads/2019/04/you-can-do-it-meme-72.jpg" alt="Girl in a jacket" width="480" height="270">]
+]
 
 ---
 #  Why don’t clinicians use it? 
@@ -426,17 +488,14 @@ Ability to answer questions that are .blue[clinically relevant variants on those
   + <a href="http://www.dgapractice.com/documents/meehl_case_conferences_adapted.pdf">Theory of Spun Glass</a> (Meehl, 1973)
 
 ---
-layout: false
-class: center, middle, inverse
-# Approaches to Measurement
-
----
+name: measures-slide
+class: center, middle
 background-image: url(https://images.unsplash.com/photo-1501516069922-a9982bd6f3bd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVhc3VyZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
 background-position:85% 85%
 background-size: cover
-class: center, middle
 
-#  .white[.my-hot-red[Approaches to Measurement]]
+
+#  .my-yellow[.my-hot-blue[Approaches to Measurement]]
 
 
 ---
@@ -469,7 +528,7 @@ class: center, top, split-three,
 
 .fade[Unique measures applied in an individualised manner.]
 ]
-.my-hot-blue[
+.my-hot-green[
 - Focuses on recognition of uniqueness.
 - Uses subjective experience.
 - Based on study of uniqueness at an individual level.
@@ -490,9 +549,9 @@ class: center, top, split-three,
 ]
 ]
 
-.footnote[
+.footnote[.center[
 <a href="https://i.ytimg.com/vi/eiCSJL5zOng/maxresdefault.jpg">Adapted from </a>
-]
+]]
 ---
 
 #  Ideographic or nomothetic?
@@ -524,20 +583,35 @@ A funnel approach from nomothetic to idiographic target measures
 https://dclinpsych.leeds.ac.uk/wp-content/uploads/sites/26/2019/03/Gary-Latchford-idiographic-day.pdf
 
 #  Time series measurement 
-+ Frequent measurement of idiographic outcome measures that are key to the maintenance of the clinical problem
-+ In essence, you then ask to what extent the observed variation in the idiographic measures is consistent with change occurring?
-+ The repeated idiographic measures provide data on the variation across time in these outcome. With this information the search can begin for the causes of that variation
 
++ .blue[Frequent and systematic measurement] of outcome measures that are key to the maintenance of the clinical problem
++ In essence, you then ask to what extent the observed variation in the measures is consistent with change occurring?
++ The repeated measures provide data on the variation across time in these outcome. With this information the search can begin for the causes of that variation
+
+
+.center[
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS805ImzbghI67DjNetq3iij46BS0YdSuadlg&usqp=CAU" alt="Girl in a jacket" width="900" height="">
+]
 ---
-#  Choosing nomothetic measures  
+#  Using nomothetic measures  
 
-+ These are the psychometrics that are off the shelf and you use them at pre and post intervention
-	+ Do them at the end of follow-up if you have that in your design
-	+ Do them at the end of each phase if you are doing more than a A/B
-	+ Try to match one the nomothetic measure to the presenting problem
-	+ You need to use the CORE-OM at least.
-
++ These are the questionnaires that are 'off the shelf' and often used for pre-post change.
++ Use them:
+  + at the start/end of each phase.
+  + at the end of follow-up (if you have that in your design).
++ Try to match one the nomothetic measure to the presenting problem
++ Is the measure you are using one of .blue[Effectiveness]
+  + General psychological distress (e.g. CORE-OM, SCL-90, BSI, OQ-45, K-10).
+  + Disorder specific (e.g. BDI, PHQ-9, GAD-7, YBOCS, IES).
+  + Functioning (e.g. WSAS).
++ Supplement with other measures?
+  + Process?
+  + Assimiliation?
+  + Quality of life?
+  + Clinician rated?
+  
 ---
+
 #  Choosing a generalisation measure   
 
 + Whilst the intervention should influence the target of the intervention, an important issue is whether the intervention generalises to other aspects of the client’s life.
@@ -545,72 +619,80 @@ https://dclinpsych.leeds.ac.uk/wp-content/uploads/sites/26/2019/03/Gary-Latchfor
 	+ You take these measures (e.g. quality of life) occasionally and often in tandem with the nomothetic outcomes measures.
 
 ---
+
+# Qualitative approaches
+
 + Qualitative approaches can also be profitably applied to the single-case design. The collection of rich, detailed qualitative information throughout the course of treatment can prove useful in helping to rule out alternative hypotheses
 
 ---
 background-image: url(https://i.imgflip.com/n7kko.jpg)
 background-position:95% 65%
-background-size: 45% 40%
+background-size: contain
+class: inverse
 
-# Setting up ideos
+# .my-hot-blue[Setting up ideographic measures]
 
 ---
-
-# Practicalities
-
-+ Usually single case designs rely either on direct staff/parent/carer observations OR self-monitoring using self-report diaries.
 
 #  Designing idiographic measures: tips  
 
-+ Designed collaboratively
-+ In the client’s language
-+ Can be a piece of cognition, behaviour , affect or interpersonal process (or a variety of these; topographical variation)
-+ Anchored and scaled effectively – in the clients own words
-+ High frequency occurrences are best
-+ Intensity measures
-+ Frequency measures
-+ When to complete?
-+ What time period do they cover?
+### What to measure?
+- Anything! (anything that matters).
+- Design it collaboratively (ask your patient).
+- From the start of the first appointment keep your eyes peeled.
+- What does the patient, the family, the referrer want?
+- Miracle Question...?
+- Dont be afraid to offer suggestions or recommendations.
+
+### Types of measure?
++ Could be a cognition, behaviour, affect or interpersonal process.
++ Anchored and scaled effectively – let the client define this.
++ Intensity measures; Frequency measures; Duration measures;
 
 ---
+#  Designing idiographic measures: tips  
 
+#### When to measure?
++ Daily? More than?
 
+#### Who measures?
++ Can be anyone (doesen't have to be just one person).
++ Patient? Relative? Carer? Staff team?
 
-#  BASELINE REQUIRMENTS  
-
-What are the minimum requirements for a baseline?
-Number of observations? 14 DAYS
-Stability?  Sidman suggests collecting data until a stable baseline is achieved.  Stability is defined  5% variability around mean value.
-Remember. Your baseline measures should continue throughout your intervention and be repeated at follow up.
-When does the baseline start and end? In the UP, the baseline (A) would end once you have the formulation in place. Start of module 1 is start of treatment (B).  The UP formulation goes in the appendix of the piece of coursework.
+#### Recording proceadures?
++ Write it down for them?
++ Diary? Excel sheet? Phone 'notes'? Microsoft Forms?
 
 ---
-#  So, why is baseline stability an issue? 
+#  Baseline requirements
 
-+ A worsening baseline: sudden, dramatic worsening of symptoms may represent a temporary change that would dissipate regardless of any intervention
-	+ An improving baseline: problematic, because any subsequent improvement during the intervention phase may have occurred whether or not the intervention was introduced
+What is a suitable number of measurements (observations) for a baseline?
 
-##  Baseline-practical issues 
+Some argue that there should be stability (5% variability around mean) before progressing to intervention .red[(Sidman ???)] however this is not always essential (or realistic).
 
-+ Suitable baseline: the assessment phase
-	+ Identify a small number of target variables during the assessment and then generate a brief rating scale, which the client would complete daily over time 
+When does the baseline end? (should be at a defined, planned point). A good place may be when providing the formulation (if using one).
 
-##  STABLE BASELINES 
+**Remember**! Your ideiographic measures go from the start to end of the work.
 
-Baseline should be stable (mean level) with low variability.
+---
+#  Are baseline trends an issue? 
+
++ A worsening baseline (worsening of symptoms) may represent a temporary change that would dissipate regardless of any intervention.
++ An improving baseline may prevent confidence in saying whether subsequent improvement is due to intervention or natrual remission.
++ Stability also shows its not spontaneous recovery
+
+.blue[Ideally] the baseline should be stable (mean level) with low variability.
 Problems arise if baselines display:
 ( i )	Linear trends:
 (ii)	Higher order trends
-(iii)	High variability
-Presence of ( i ), (ii), or (iii) makes both visual or mathematical analysis more difficult.
-
+(iii)	High variability.
+Presence of these makes visual or statistical analysis more difficult **(but still possible)**.
 
 ---
-#  Consider having a control idiographic measure 
+# Control idiographic measure 
 
 + These are an idiographic measure, not expected to change due to the intervention
-	+ If there is change in the target idiographic measures and not the control is shows the intervention working.
-	+ Stability also shows its not spontaneous recovery
++ If there is change in the target idiographic measures and not the control is shows the intervention working.
 
 ---
 #  How to engage clients 
@@ -626,144 +708,133 @@ Presence of ( i ), (ii), or (iii) makes both visual or mathematical analysis mor
 + Promise feedback
 
 ---
+layout: false
+class: inverse
+
 #  Modelling and role play  
 
 + Lets decide as a group what the client will be presenting with and in what context
-	+ What the demonstration and then we can critique it
-	+ Then you will get to practice in 2s – you both have a go.
+
++ What the demonstration and then we can critique it
+
++ Then you will get to practice in 2s – you both have a go.
 
 ---
+name: designs-slide
+class: inverse, middle, center
+
+# Designs
+
+---
+layout: false
 class: inverse
-
-### Different designs
-
 
 .panelset[
 
-.panel[.panel-name[Designs]
+.panel[.panel-name[Designs] <!--Front-->
 
-.white[
-Various SCED designs
-
-Endless number of possible combinations.
-]
-
-
-What do the letters mean?
+.small[.pull-left-narrow[.white[Numerous SCED designs]
 - A = Baseline
 - B = Intervention
-- A2/W = Withdraw treatment
-- C = Second, alternate treatment.
-- FU = Follow up.
+- A2/W = Withdrawal
+- C = Alt. treatment
+- FU = Follow up
 
-The choice of design determines the internal and external validity of your single-case study.
+Important to consider ethics and feasibility.
 
-Important to be aware of what is feasible and ethical.
-
-
-] <!--Designs-->
-
-.panel[.panel-name[A-B]
-
-.pull-left-narrow[
-- Most accessible.
-- Low validity.
-- Empirical case study.
-- Another point.
-- Another point,
-]
+Design influences strength of validity.
+]]
 
 .pull-right-wide[
+### .center[Different types of SCED]
+<img src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/87f59f64-c81a-4771-bd80-ec57c0da4c9a/gr1_lrg.jpg" alt="Girl in a jacket" width="700" height="400">]
+] 
+
+.panel[.panel-name[A-B] <!--AB-->
+
+.small[
+.pull-left-narrow[
+- Most basic & accessible.
+- Improvement on simple pre-post
+- Low validity.
+- Quasi-experimental.
+- Leaves open many alternative explanations for observed change.
+]]
+
+.pull-right-wide[
+### .center[Classic A-B Design]
+
 .center[
-<img src="Images/AB.png" alt="Girl in a jacket" width="1200" height="400">]
+<img src="Images/AB.png" alt="Girl in a jacket" width="1200" height="350">]
 ]
 
-.small[Link to a relevant paper.]
+.right[
+.small[For examples of studies using AB designs see
+<a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4ED9F2DD6363B66B0C18F6B4A3081B6/S1352465814000411a.pdf/transdiagnostic-cbt-treatment-of-co-morbid-anxiety-and-depression-in-an-older-adult-single-case-experimental-design.pdf">(Hague, 2015)</a> or 
+<a href="https://eprints.whiterose.ac.uk/174906/3/Effectiveness%20of%20the%20unified%20protocol%20for%20treating%20co-morbid%20health%20anxiety%20and%20depression%20-%20an%20empirical%20case%20study.pdf">(Gaskell, 2021)</a>.
+]]
 
 
-] <!--A-B Design-->
+
+] <!--A-B-FU Design-->
 
 .panel[.panel-name[A-B-FU]
 
 .pull-left-narrow[
-- Most accessible.
-- Low validity.
-- Empirical case study.
-- Another point.
-- Another point,
+- Multiple comparisons possible.
+- Can assess maintenance of gains.
+- stronger than A-B design.
 ]
-
-
-
 
 .pull-right-wide[
+### .center[Integrating a follow-up]
+
 .center[
-<img src="Images/ABFU.png" alt="Girl in a jacket" width="1200" height="400">]
+<img src="Images/ABFU.png" alt="Girl in a jacket" width="1200" height="350">]
 ]
 
-.small[Link to a relevant paper.]
+.right[
+.small[For an example study using an AB follow up design see
+<a href="https://www.tandfonline.com/doi/pdf/10.1080/03069885.2021.1929834">(Kellett, 2021)</a>.
+]]
+
 ] <!--A-B-FU Design-->
 
 .panel[.panel-name[A-B-A-B]
+
 .pull-left-narrow[
-- Another point.
 - Another point.
 - Another point.
 - Another point.
 ]
 
 .pull-right-wide[
+### .center[Using a withdrawal phase]
+
 .center[
-<img src="Images/ABAB.png" alt="Girl in a jacket" width="1200" height="400">]
+<img src="Images/ABFU.png" alt="Girl in a jacket" width="1200" height="350">]
 ]
 
-.small[Link to a relevant paper.]
+.right[
+.small[For an example study using an ABAB design see
+<a href="https://bpspsychub.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/papt.12278">(Kellett, 2021)</a>.
+]]
 
-] <!--A-B-A-B-->
+] <!--A-B-A-C-->
 
 .panel[.panel-name[A-B-A-C]
 .pull-left-narrow[
-- Another point.
-- Another point.
-- Another point.
-- Another point.
+- Comparing treatment effectiveness.
+– Seldom employed in psychotherapy .
 ]
 
 .pull-right-wide[
-.center[
-<img src="Images/ABAC.png" alt="Girl in a jacket" width="1200" height="400">]
+### .center[Alternating the treatment]
+.center[<img src="Images/ABAC.png" alt="Girl in a jacket" width="1200" height="350">]]
+
+.right[.small[For an example study using an ABC design see <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2997836636C01A6766138701F889AB8C/S1352465820000521a.pdf/treatment_of_compulsive_buying_disorder_comparing_the_effectiveness_of_cognitive_behavioural_therapy_with_personcentred_experiential_counselling.pdf">(Kellett, 2021)</a>.]]
 ]
-
-.small[Link to a relevant paper.]
-] <!--A-B-A-C-->
-
-]
-
-???
-
-###  The A/B design(see the CBT example with an older adult in your pack) 
-
-+ The A/B design is the most basic approach to single-case research. It involves a baseline period (termed A), during which measures are taken repeatedly, and a subsequent intervention period (termed B), during which measurement continues
-	+ Improvement on simple pre-post design
-	+ It is in terms of the research ideal the weakest strategy, because it leaves open so many alternative explanations for any observed improvement in symptoms
-	+ Not a SCED, but a quasi-experimental design
-
-###  Consider having a follow-up phase 
-
-+ This would make it an A/B + FU design.
-	+ You can compare baseline to treatment and then stability of change in a treatment versus follow-up comparison.
-	+ This is a slightly stronger design.
-
-
-###  ALTERNATIVE TREATMENT DESIGN: A/B/CSee the compulsive buying example ABC in your workshop pack  
-
-Presence/opportunity to engage in two or more treatments – you would need to have a baseline, a phase of the UP and then another treatment.
-Which treatment is most effective?
-Problems: Is seldom employed for psychotherapy .
-
-###  Withdrawal designs A/B/A(see the CAT for BPD example in your pack)  
-
-###  CHANGING CRITERION DESIGN 
+] <!--Panel-Set-End-->
 
 ---
 
@@ -822,6 +893,9 @@ Treatment holidays?
 	+ Treatment fidelity (how to keep everything the same bar starting treatment).
 
 ---
+name: stages-slide
+class: inverse
+
 #  STAGES TO SCED  
 
 IDENTIFY QUESTION  AND HYPOTHESIS.
@@ -1018,6 +1092,13 @@ Play around with the methodology
 	+ Aware of different types of SCED design
 	+ How to design and implement measures
 
+---
+#  Treatment  
+
++ Involves introducing (/or withdrawing) an intervention and monitoring change in outcome.
++ The treatment you deliver needs to be well specified
+	+ Take all of this – the design and the intervention to supervision.
+	+ Tape a treatment session and get your supervisor to rate your clinical competency with the CTS-R and you can report that in your method – that would add to the write up (but isn’t a must do).
 
 
 ```{r output, include=F, echo=F}
