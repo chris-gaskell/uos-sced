@@ -747,7 +747,7 @@ Design influences strength of validity.
 
 .pull-right-wide[
 ### .center[Different types of SCED]
-<img src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/87f59f64-c81a-4771-bd80-ec57c0da4c9a/gr1_lrg.jpg" alt="Girl in a jacket" width="" height="">]
+<img src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/87f59f64-c81a-4771-bd80-ec57c0da4c9a/gr1_lrg.jpg" alt="Girl in a jacket" width="" height="400">]
 ] 
 
 .panel[.panel-name[A-B] <!--AB-->
@@ -765,7 +765,7 @@ Design influences strength of validity.
 ### .center[Classic A-B Design]
 
 .center[
-<img src="AB.png" alt="Girl in a jacket" width="1200" height="350">]
+<img src="AB.png" alt="Girl in a jacket" width="" height="350">]
 ]
 
 .right[
@@ -790,7 +790,7 @@ Design influences strength of validity.
 ### .center[Integrating a follow-up]
 
 .center[
-<img src="Images/ABFU.png" alt="Girl in a jacket" width="1200" height="350">]
+<img src="Images/ABFU.png" alt="Girl in a jacket" width="" height="">]
 ]
 
 .right[
@@ -812,7 +812,7 @@ Design influences strength of validity.
 ### .center[Using a withdrawal phase]
 
 .center[
-<img src="Images/ABFU.png" alt="Girl in a jacket" width="1200" height="350">]
+<img src="Images/ABFU.png" alt="Girl in a jacket" width="" height="350">]
 ]
 
 .right[
@@ -830,7 +830,7 @@ Design influences strength of validity.
 
 .pull-right-wide[
 ### .center[Alternating the treatment]
-.center[<img src="Images/ABAC.png" alt="Girl in a jacket" width="1200" height="350">]]
+.center[<img src="Images/ABAC.png" alt="Girl in a jacket" width="" height="">]]
 
 .right[.small[For an example study using an ABC design see <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2997836636C01A6766138701F889AB8C/S1352465820000521a.pdf/treatment_of_compulsive_buying_disorder_comparing_the_effectiveness_of_cognitive_behavioural_therapy_with_personcentred_experiential_counselling.pdf">(Kellett, 2021)</a>.]]
 ]
