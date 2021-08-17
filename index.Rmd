@@ -747,7 +747,7 @@ Design influences strength of validity.
 
 .pull-right-wide[
 ### .center[Different types of SCED]
-<img src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/87f59f64-c81a-4771-bd80-ec57c0da4c9a/gr1_lrg.jpg" alt="Girl in a jacket" width="700" height="400">]
+<img src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/87f59f64-c81a-4771-bd80-ec57c0da4c9a/gr1_lrg.jpg" alt="Girl in a jacket" width="" height="">]
 ] 
 
 .panel[.panel-name[A-B] <!--AB-->
