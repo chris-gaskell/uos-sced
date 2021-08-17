@@ -765,7 +765,7 @@ Design influences strength of validity.
 ### .center[Classic A-B Design]
 
 .center[
-<img src="Images/AB.png" alt="Girl in a jacket" width="1200" height="350">]
+<img src="AB.png" alt="Girl in a jacket" width="1200" height="350">]
 ]
 
 .right[
