@@ -790,7 +790,7 @@ Design influences strength of validity.
 ### .center[Integrating a follow-up]
 
 .center[
-<img src="plots_files/figure-html/ABFU-1.png" alt="Girl in a jacket" width="" height="">]
+<img src="ABAB.png" alt="Girl in a jacket" width="" height="">]
 ]
 
 .right[
