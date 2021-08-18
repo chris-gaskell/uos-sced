@@ -777,6 +777,34 @@ Design influences strength of validity.
 
 
 ]
+
+.panel[.panel-name[A-B] <!--AB-->
+
+.small[
+.pull-left-narrow[
+- Most basic & accessible.
+- Improvement on simple pre-post
+- Low validity.
+- Quasi-experimental.
+- Leaves open many alternative explanations for observed change.
+]]
+
+.pull-right-wide[
+### .center[Classic A-B Design]
+
+.center[
+<img src="AB.png" alt="Girl in a jacket" width="" height="350">]
+]
+
+.right[
+.small[For examples of studies using AB designs see
+<a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/F4ED9F2DD6363B66B0C18F6B4A3081B6/S1352465814000411a.pdf/transdiagnostic-cbt-treatment-of-co-morbid-anxiety-and-depression-in-an-older-adult-single-case-experimental-design.pdf">(Hague, 2015)</a> or 
+<a href="https://eprints.whiterose.ac.uk/174906/3/Effectiveness%20of%20the%20unified%20protocol%20for%20treating%20co-morbid%20health%20anxiety%20and%20depression%20-%20an%20empirical%20case%20study.pdf">(Gaskell, 2021)</a>.
+]]
+
+
+
+]
 <!--A-B-FU Design-->
 
 .panel[.panel-name[A-B-FU]
@@ -813,7 +841,7 @@ Design influences strength of validity.
 ### .center[Using a withdrawal phase]
 
 .center[
-<img src="ABAB.png" alt="Girl in a jacket" width="" height="350">]
+<img src="Images/ABFU.png" alt="Girl in a jacket" width="" height="350">]
 ]
 
 .right[
@@ -831,7 +859,7 @@ Design influences strength of validity.
 
 .pull-right-wide[
 ### .center[Alternating the treatment]
-.center[<img src="ABAB.png" alt="Girl in a jacket" width="" height="350">]]
+.center[<img src="Images/ABAC.png" alt="Girl in a jacket" width="" height="350">]]
 
 .right[.small[For an example study using an ABC design see <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2997836636C01A6766138701F889AB8C/S1352465820000521a.pdf/treatment_of_compulsive_buying_disorder_comparing_the_effectiveness_of_cognitive_behavioural_therapy_with_personcentred_experiential_counselling.pdf">(Kellett, 2021)</a>.]]
 ]
