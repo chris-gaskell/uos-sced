@@ -258,22 +258,20 @@ content: "";
 .title-slide {
   /*background-color:   #E7EDF8;*/
   background-color:   var(--my-blue);
-  background-image: url(title-plot.gif);
+  background-image: url(images/title.png);
   background-position: 50% 95%;
-  background-size: 70% 35%;
+  background-size: 90% 55%;
 
   color:              white;
 }
 /*-- Headings --*/
 .title-slide h1 {
-  font-size:          3.0em;
+  font-size:          1.7em;
   font-weight:        600;
   color:              white;
 }
 .title-slide h2 {
-  font-size:          5em;
-  font-weight:        600;
-  color:              white;
+  color:              var(--my-yellow);
   font-size:          1em;
 }
 

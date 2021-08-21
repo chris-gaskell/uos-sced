@@ -95,7 +95,9 @@ Plot <- ggplot(dat$dat.stability,
 ```
 
 ```{r title-plot2, include=T}
-Plot <- ggplot(dat$dat.stability, aes(x = mt, y = values)) +
+library(gganimate)
+
+  Plot <- ggplot(dat$dat.AB, aes(x = mt, y = values)) +
           geom_line(aes(color = phase), color="#e5bf00", fill = "red") +
           scale_color_manual(values = c("#e5bf00"))+
           jtools::theme_apa()+
@@ -115,6 +117,32 @@ Plot <- Plot + theme(
 
 Plot <- Plot + geom_point(colour = "#e5bf00")
 
-Plot
+Plot + transition_reveal(mt)
 
 ```
+
+
+
+```{r transition, include=T}
+
+  Plot <- ggplot(dat$dat.AB, aes(x = mt, y = values)) +
+          geom_line(aes(color = phase), color="#e5bf00", fill = "red") +
+          scale_color_manual(values = c("#e5bf00"))+
+          jtools::theme_apa()+
+          ylab("1-100 Rating Scale")+
+          xlab("Measurement days across the study") +
+          # ggtitle("Time series graph - alternative treatment for major depression") +
+  geom_vline(xintercept = 28, color = "white", size=.5, linetype="dashed")+
+     annotate("text", x = .5*(0+25), y = 18, label = "Baseline", size=6, colour = "#e5bf00") +
+     annotate("text", x = .5*(25+70), y = 18, label = "CBT", size=6, colour = "#e5bf00") + theme(
+            plot.background = element_rect(fill = "#122140", colour = NULL, size = 0),
+            panel.background =  element_rect(fill = "#122140", colour = "white"),
+            text = element_text(colour = "white"),
+            axis.text = element_text(colour = "#e5bf00", size = rel(1))
+            ) + geom_point(colour = "#e5bf00") + transition_reveal(mt)
+
+anim_save("title-plot.gif")
+
+```
+
+

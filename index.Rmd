@@ -1,7 +1,7 @@
 ---
-title: 'Planning for, conducting and reporting a single case experimental design'
-subtitle: 'Clinical and Applied Psychology Unit'
-author: University of Sheffield
+title: 'Single Case Experimental Design'
+subtitle: 'A workshop for clinicians in routine services. Day one: Planning for, conducting and reporting another one'
+author:  University of Sheffield -Clinical and Applied Psychology Unit
 institute: false
 date: false
 output:
