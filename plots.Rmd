@@ -33,115 +33,140 @@ sc.dat <- scan::readSC.excel("data/data.xls",)
 
 
 ```{r AB, echo=FALSE}
+dat <- data.frame(
+        mt = seq(1,56, by=1),
+        phase = c(rep("A",14), rep("B",42)),
+        values = c(sample(15:30, 14, replace = TRUE), sample(0:15, 42, replace = TRUE))
+)
 
-newstyle <- style_plot(fill = "grey95", grid = "lightblue", pch = 16)
+dat <- scan::as_scdf(dat)
 
-plotSC(sc.dat$Reassurance, style = newstyle,
-       xinc = 5, main = "A-B Single Case Design",
+newstyle <- style_plot(fill = "grey95", grid = "lightblue", pch = 16
+                       )
+
+plotSC(dat, style = newstyle,
+       xinc = 5, main = " ",
        xlab = "Days of the study",
        ylab = "Reassurance seeking behaviours",
-       phase.names = c("Baseline", "CBT")
+       phase.names = c("Baseline", "CBT"),
+       case.names = " "
           )
     
 ```
 
 ```{r ABFU, echo=FALSE}
 
-plotSC(sc.dat$Compassion, style = newstyle,
-       xinc = 5, main = "A-B-FU Single Case Design",
+dat <- data.frame(
+        mt = seq(1,70, by=1),
+        phase = c(rep("A",14), rep("B",42), rep("FU",14)),
+        values = c(sample(15:30, 14, replace = TRUE), sample(0:15, 42, replace = TRUE), sample(10:21, 14, replace = TRUE))
+)
+
+dat <- scan::as_scdf(dat)
+
+newstyle <- style_plot(fill = "grey95", grid = "lightblue", pch = 16
+                       )
+
+plotSC(dat, style = newstyle,
+       xinc = 5, main = " ",
        xlab = "Days of the study",
-       ylab = "Self rating of self compassion",
-       phase.names = c("Baseline", "CAT", "Follow Up")
+       ylab = "Reassurance seeking behaviours",
+       phase.names = c("Baseline", "CBT", "Follow Up"),
+       case.names = " "
           )
     
 ```
 
 ```{r ABAB, echo=FALSE}
 
-plotSC(sc.dat$Shame, style = newstyle,
-       xinc = 5, main = "A-B-A-B Single Case Design",
+dat <- data.frame(
+        mt = seq(1,84, by=1),
+        phase = c(rep("A",14), rep("B",28), rep("A",14), rep("B",28)),
+        values = c(sample(15:30, 14, replace = TRUE), sample(0:15, 28, replace = TRUE), sample(10:21, 14, replace = TRUE), sample(0:15, 28, replace = TRUE))
+)
+
+dat <- scan::as_scdf(dat)
+
+newstyle <- style_plot(fill = "grey95", grid = "lightblue", pch = 16
+                       )
+
+plotSC(dat, style = newstyle,
+       xinc = 5, main = " ",
        xlab = "Days of the study",
-       ylab = "Self rating of shame",
-       phase.names = c("Baseline", "CBT", "Withdrawal", "CBT", "Follow Up")
+       ylab = "Reassurance seeking behaviours",
+       phase.names = c("Baseline", "Graded Exposure", "Withdrawal", "Cognitve Therapy"),
+       case.names = " "
           )
     
 ```
 
 ```{r ABAC, echo=FALSE}
 
-plotSC(sc.dat$Depression, style = newstyle,
-       xinc = 5, main = "A-B-A-C Single Case Design",
+dat <- data.frame(
+        mt = seq(1,84, by=1),
+        phase = c(rep("A",14), rep("B",14), rep("A",42), rep("B",14)),
+        values = c(sample(25:30, 14, replace = TRUE), sample(18:23, 14, replace = TRUE), sample(13:18, 42, replace = TRUE), sample(15:20, 14, replace = TRUE))
+)
+
+dat <- scan::as_scdf(dat)
+
+newstyle <- style_plot(fill = "grey95", grid = "lightblue", pch = 16
+                       )
+
+plotSC(dat, style = newstyle,
+       xinc = 5, main = " ",
        xlab = "Days of the study",
-       ylab = "Self rating of depression",
-       phase.names = c("Baseline", "BT", "Withdrawal", "CBT", "Follow Up")
+       ylab = "Reassurance seeking behaviours",
+       phase.names = c("Baseline", "Grounding", "CBT", "Follow Up"),
+       case.names = " "
           )
     
 ```
 
 ```{r plot-stability, echo=FALSE}
-plotSC(sc.dat$Sleep, style = newstyle,
-       xinc = 5, xlab = "Days of the study",
-       ylab = "Hour asleep",
-       phase.names = c("Baseline", "Sleep Hygiene")
-          )
+#plotSC(sc.dat$Sleep, style = newstyle,
+#       xinc = 5, xlab = "Days of the study",
+#       ylab = "Hour asleep",
+#       phase.names = c("Baseline", "Sleep Hygiene")
+#          )
 ```
 
 ```{r title-plot, include=F}
-Plot <- ggplot(dat$dat.stability,
-          aes(x = mt, y = values)) +
-          geom_line(aes(color = phase,
-                )) 
-
-```
-
-```{r title-plot2, include=T}
-library(gganimate)
-
-  Plot <- ggplot(dat$dat.AB, aes(x = mt, y = values)) +
-          geom_line(aes(color = phase), color="#e5bf00", fill = "red") +
-          scale_color_manual(values = c("#e5bf00"))+
-          jtools::theme_apa()+
-          ylab("1-100 Rating Scale")+
-          xlab("Measurement days across the study") +
-          # ggtitle("Time series graph - alternative treatment for major depression") +
-  geom_vline(xintercept = 28, color = "black", size=.5, linetype="dashed")+
-     annotate("text", x = .5*(0+25), y = 18, label = "Baseline", size=6, colour = "#122140") +
-     annotate("text", x = .5*(25+70), y = 18, label = "CBT", size=6, colour = "#122140")
-
-Plot <- Plot + theme(
-            plot.background = element_rect(fill = "#122140", colour = NULL, size = 0),
-            panel.background =  element_rect(fill = "white", colour = "white"),
-            text = element_text(colour = "white"),
-            axis.text = element_text(colour = "#e5bf00", size = rel(1))
-            )
-
-Plot <- Plot + geom_point(colour = "#e5bf00")
-
-Plot + transition_reveal(mt)
+#Plot <- ggplot(dat$dat.stability,
+#          aes(x = mt, y = values)) +
+#          geom_line(aes(color = phase,
+#                )) 
 
 ```
 
 
 
-```{r transition, include=T}
+```{r transition, include=F, fig.width=12, fig.height=5}
+dat <- data.frame(
+        mt = seq(1,56, by=1),
+        phase = c(rep("A",14), rep("B",42)),
+        values = c(sample(15:30, 14, replace = TRUE), sample(0:15, 42, replace = TRUE))
+)
 
-  Plot <- ggplot(dat$dat.AB, aes(x = mt, y = values)) +
-          geom_line(aes(color = phase), color="#e5bf00", fill = "red") +
-          scale_color_manual(values = c("#e5bf00"))+
-          jtools::theme_apa()+
-          ylab("1-100 Rating Scale")+
-          xlab("Measurement days across the study") +
-          # ggtitle("Time series graph - alternative treatment for major depression") +
-  geom_vline(xintercept = 28, color = "white", size=.5, linetype="dashed")+
-     annotate("text", x = .5*(0+25), y = 18, label = "Baseline", size=6, colour = "#e5bf00") +
-     annotate("text", x = .5*(25+70), y = 18, label = "CBT", size=6, colour = "#e5bf00") + theme(
+Plot <- ggplot(dat, aes(x = mt, y = values)) +
+          geom_line(aes(color = phase), color="#e5bf00") +
+          ylab("Number of checking behaviours")+
+          xlab("Days across the study") +
+  geom_vline(xintercept = 14.5, color = "white", size=.5, linetype="dashed")+
+     annotate("text", x = .5*(0+14), y = 31, label = "Baseline", size=10, colour = "#e5bf00") +
+     annotate("text", x = .5*(14+56), y = 31, label = "CBT", size=10, colour = "#e5bf00") + theme(
             plot.background = element_rect(fill = "#122140", colour = NULL, size = 0),
-            panel.background =  element_rect(fill = "#122140", colour = "white"),
+            panel.background =  element_rect(fill = "#122140", colour = "white"), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            axis.title=element_text(size=16,face="bold"),
             text = element_text(colour = "white"),
-            axis.text = element_text(colour = "#e5bf00", size = rel(1))
-            ) + geom_point(colour = "#e5bf00") + transition_reveal(mt)
+            axis.text = element_text(colour = "#e5bf00", size = rel(1.5))
+            ) + geom_point(colour = "white")+ 
+      scale_x_continuous(breaks=seq(0,56,5)) +
+      scale_y_continuous(breaks=seq(0,30,5)) + gganimate::transition_reveal(mt)
 
-anim_save("title-plot.gif")
+  
+gganimate::animate(Plot, height = 300, width =1200)
+gganimate::anim_save("title-plot.gif")
 
 ```
 

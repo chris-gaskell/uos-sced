@@ -43,6 +43,7 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_scribble()
 #xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
 xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
+xaringanExtra::use_share_again()
 
 ```
 class: center, middle, split-three, about-me-slide
@@ -186,7 +187,7 @@ If you find any problems with these slides then e-mail
   <img src="https://spcanelon.github.io/xaringan-basics-and-beyond/slides/img/hex-xaringan.png" alt="Trulli" style="width:45%">
   
     <img src="https://psyteachr.github.io/hack-your-data/img/rmarkdown.png" alt="Trulli" style="width:45%">
-  <figcaption>.small[Slides made using Xaringan and R Markdown.]</figcaption>
+  <figcaption>.small[.right[Slides made using Xaringan and R Markdown.]]</figcaption>
 </figure>
 
 ]]
@@ -790,7 +791,7 @@ Design influences strength of validity.
 ### .center[Integrating a follow-up]
 
 .center[
-![](plots_files/figure-html/AB-1.png)
+![](plots_files/figure-html/ABFU-1.png)
 ]
 ]
 
@@ -813,7 +814,7 @@ Design influences strength of validity.
 ### .center[Using a withdrawal phase]
 
 .center[
-![](plots_files/figure-html/AB-1.png)
+![](plots_files/figure-html/ABAB-1.png)
 ]
 ]
 
@@ -833,7 +834,7 @@ Design influences strength of validity.
 .pull-right-wide[
 ### .center[Alternating the treatment]
 .center[
-![](plots_files/figure-html/AB-1.png)
+![](plots_files/figure-html/ABAC-1.png)
 ]]
 
 .right[.small[For an example study using an ABC design see <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/2997836636C01A6766138701F889AB8C/S1352465820000521a.pdf/treatment_of_compulsive_buying_disorder_comparing_the_effectiveness_of_cognitive_behavioural_therapy_with_personcentred_experiential_counselling.pdf">(Kellett, 2021)</a>.]]
