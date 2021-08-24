@@ -43,6 +43,7 @@ xaringanExtra::use_tile_view()
 xaringanExtra::use_scribble()
 #xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
 xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
+xaringanExtra::use_share_again()
 
 ```
 class: center, middle, split-three, about-me-slide
