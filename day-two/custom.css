@@ -58,7 +58,7 @@ svg:hover {
 
 /*-- LINKS/ANCHORS --*/
 a {
-  color: Darkblue;
+  color: --my-red;
   text-decoration: underline;
 }
 
@@ -73,7 +73,7 @@ a:hover { color: orange;
 }
 
 .remark-slide-content h1 {
-  color:              var(--DarkBlue);
+  color:              var(--my-red);
   font-weight:        400;
   line-height:        1em;
 }
@@ -82,7 +82,7 @@ a:hover { color: orange;
   /*font-size:          35px;*/
   /*font-size:          1.4em;*/
   font-weight:        400;
-  color:              #6ebcf7
+  color:              var(--my-red);
   line-height:        1em;
   letter-spacing:     0.02em;
 }
@@ -90,14 +90,14 @@ a:hover { color: orange;
 .remark-slide-content h3 {
   /*font-size:          1em;*/
   font-weight:        500;
-  color:              var(--DarkBlue);
+  color:              var(--my-red);
   line-height:        1em;
 }
 
 .remark-slide-content h4 {
   /*font-size:          1em;*/
   font-weight:        500;
-  color:              var(--DarkBlue);
+  color:              var(--my-red);
   line-height:        1em;
 }
 
@@ -120,7 +120,7 @@ hr {
 
 /*-- Slide background and text (inverse) --*/
 .inverse {
-  background-color:   var(--my-blue);
+  background-color:   var(--my-red);
   color:              var(--my-yellow);
   text-shadow:        none;
 }
@@ -193,7 +193,7 @@ a.footer-link {
 }
 
 div.footer-link {
-    background-color: var(--my-blue);
+    background-color: var(--my-red);
     position:         absolute;
     bottom:           0px;
     left:             0px;
@@ -209,7 +209,7 @@ div.footer-link {
 /*-- In-line highlighting within text --*/
 .remark-code, .remark-inline-code {
   font-size:          80%;
-  color:              var(--my-blue);
+  color:              var(--my-red);
   background:         var(--PaleGrey);
   border-radius:      3px;
   padding:            1px 1px 1px 1px;
@@ -257,21 +257,22 @@ content: "";
 
 .title-slide {
   /*background-color:   #E7EDF8;*/
-  background-color:   var(--my-blue);
-  background-image: url(images/title.png);
-  background-position: 50% 95%;
-  background-size: 90% 55%;
+  background-color:   var(--my-red);
+  background-image: url(title-plot.gif);
+  background-position: 50% 100%;
 
   color:              white;
 }
 /*-- Headings --*/
 .title-slide h1 {
-  font-size:          1.7em;
+  font-size:          3.0em;
   font-weight:        600;
   color:              white;
 }
 .title-slide h2 {
-  color:              var(--my-yellow);
+  font-size:          5em;
+  font-weight:        600;
+  color:              white;
   font-size:          1em;
 }
 
@@ -341,7 +342,7 @@ opacity: 0.85;}
 
 .remark-slide-number .progress-bar {
   height: 100%;
-  background-color: var(--DarkBlue);
+  background-color: var(--my-red);
 }
 
 /*-- EXPERIMENTAL -----------------------------------------------------------*/

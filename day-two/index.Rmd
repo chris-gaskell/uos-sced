@@ -1,7 +1,8 @@
 ---
-title: 'Analysing Single Case Data'
-subtitle: 'Clinical and Applied Psychology Unit'
-author: University of Sheffield
+title: 'Single Case Experimental Design #2'
+subtitle:
+  - 'A workshop for routine clinicians - Day 2: Analysing time series data'
+author:  University of Sheffield - Clinical and Applied Psychology Unit
 institute: false
 date: false
 output:
@@ -51,7 +52,156 @@ background-image: url(uos.png), url(pearls.jpg)
 background-position:5% 95%, 98% 96%
 background-size: 110px 50px, 10%
 
+.column.bg-main1[.content[
+<img style="border-radius: 50%;" src="https://catalyse.uk.com/wp-content/uploads/sites/3/2015/10/SKcrop.jpg" width="150px"/>
+
+### Steve Kellett
+
+#### Clinical Psychologist
+
+.fade[Sheffied Health & Social Care
+NHS Foundation Trust]
+
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:s.kellett@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Stephen-Kellett)
+]]
+.column.bg-main2[.content[
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1235537191683723265/Qo6rZ317_400x400.jpg" width="150px"/>
+
+### Mel Simmonds-Buckley
+
+#### Researcher
+
+.fade[University of Sheffield]
+
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:m.simmonds-buckley@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=T85W7TYAAAAJ&hl=en)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Mel-Simmonds-Buckley)
+]]
+.column.bg-main3[.content[
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1371177930236293126/Sf9QTdef_400x400.jpg" width="150px"/>
+
+### Chris Gaskell
+
+#### Clinical Psychologist
+
+.fade[Salford Royal
+NHS Foundation Trust]
+
+[`r icons::icon_style(icons::fontawesome("twitter"), scale = 1.5)` ](https://twitter.com/chrisgaskell92)
+[`r icons::icon_style(icons::fontawesome("github"), scale = 1.5)`](https://github.com/chris-gaskell)
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:cgaskell1@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=gQuNwfYAAAAJ&hl=en&authuser=1&oi=ao)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Chris-Gaskell-2)
+]]
+
+
 ---
+class: center, top, split-three, inverse
+background-image: url(https://rin.org.uk/resource/resmgr/nav21/nav21_map.png)
+background-position:8% 70%
+background-size: 375px 300px
+
+
+.column.bg-main1[.content[.right[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+
+# `r icons::icon_style(icons::fontawesome("compass"), scale = 1, fill = "var(--my-yellow)")` Navigating these slides
+
+]]]
+
+--
+
+.column.bg-main2[.content[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+.Large[.bold[
+### Day 1
+[Aims + Intro](#aims-slide)
+
+[Why](#why-slide)
+
+[Measures](#measures-slide)
+
+[Designs](#designs-slide)
+
+[Setting it up](#stages-slide)]
+]]]
+
+--
+
+.column.bg-main3[.content[
+<img style="border-radius: 50%;" src=" " width="150px"/>
+
+.Large[.Bold[
+### Day 2
+
+.bold[
+[Analysis](#analysis-slide)
+
+[Practice](#practice-slide)
+
+[Resources](#resources-slide)]
+
+]]]]
+
+--
+
+.footnote[.Large[**Note**: all underlined
+.white[.underline[white]] and
+.my-hot-white[.my-red[.underline[red]]] text are hyperlinks!]
+]
+
+---
+
+name: contents-slide
+class: inverse
+background-image:
+background-position:
+background-size:
+
+# `r icons::icon_style(icons::fontawesome("compass"), scale = 1, fill = "var(--my-yellow)")` Navigating these slides
+
+`r icons::icon_style(icons::fontawesome("keyboard"), scale = 1, fill = "var(--my-yellow)")`
+.large[.white[Keyoard shortcuts] - Press 'h'.]
+
+`r icons::icon_style(icons::fontawesome("map-marked-alt"), scale = 1, fill = "var(--my-yellow)")`
+.large[.white[Overview slides] - Press 'o'.]
+
+`r icons::icon_style(icons::fontawesome("pen"), scale = 1, fill = "var(--my-yellow)")`
+.large[.white[Scribble on slides] - Press 's'.]
+
+.footnote[
+.Large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
+This presentation is also available as a <a href="https://chris-gaskell.github.io/uos-sced/output/index.pdf">pdf</a>.
+
+
+.Large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
+If you find any problems with these slides then e-mail
+<a href="mailto:cgaskell1@sheffield.ac.uk">Chris</a>.
+]
+
+--
+.pull-right[
+.center[
+<figure>
+  <img src="https://spcanelon.github.io/xaringan-basics-and-beyond/slides/img/hex-xaringan.png" alt="Trulli" style="width:45%">
+  
+    <img src="https://psyteachr.github.io/hack-your-data/img/rmarkdown.png" alt="Trulli" style="width:45%">
+  <figcaption>.small[.right[Slides made using Xaringan and R Markdown.]]</figcaption>
+</figure>
+
+]]
+
+
+---
+layout: true
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+---
+
 #  Plan for Day 2 
 
 + Visual analysis and interpretation
@@ -64,30 +214,32 @@ background-size: 110px 50px, 10%
 ---
 #  Key features of SCED analysis 
 
-+ SCEDs are fundamentally different to group-based research
-	+ Group research -> averages/combined findings/overall effects
-	+ SCED -> raw data/stability, variability, trends/individual effects
-+ Visual analysis – this is the main analysis!
-	+ Plot and analyse time series data visually
-+ Statistical analysis
-	+ Use statistics to confirm visual analysis
-	+ Never interpret SCED statistics in isolation – viewed alongside visual plots
-	+ Be aware of the limitations of statistical analysis in SCED
+SCEDs are fundamentally different to group-based research.
+- Group research -> averages/combined findings/overall effects
+- SCED -> raw data/stability, variability, trends/individual effects
+
+.my-red[Visual analysis] – this is the main analysis! Plot and analyse time series data visually
+
+.my-red[Statistical analysis:]
++ Use statistics to confirm visual analysis
++ Never interpret SCED statistics in isolation – viewed alongside visual plots
++ Be aware of the limitations of statistical analysis in SCED
 
 ---
-#  Visual analysis 
-
-+ Plot each idiographic measure in a time series graph
-Time points along the horizontal X axis
-Severity/score on vertical Y axis
-Depict phases with vertical lines intersecting the X axis
-
----
+background-image: url(images/vis-analysis.png)
+background-position:50% 95%
+background-size:
 
 #  Visual analysis 
 
-![](images/vis-analysis.png)
++ Plot each idiographic measure in a time series graph.
+  + Time points along the horizontal X axis.
+  + Severity/score on vertical Y axis
++ Depict phases with vertical lines intersecting the X axis
+
 ---
+layout: false
+class: inverse
 
 .panelset[
 
@@ -185,14 +337,16 @@ Calculate the mean and SD of each phase and then draw bands 2 SD above and below
 
 ] <!--Panel-Set-End-->
 
+
 ---
+
 #  Interpreting visual plots 
 
-+ Interested in amount of overlap between data points in each phase
-	+ Less overlap = more likely to be differences between phases i.e. an effect!
-	+ Smaller variability within phases – easier to detect effects
-Few overlapping data points between phases = intervention has had an effect
-Lots of overlap between data points in the two phases – minimal effect of intervention
++ How much overlap between data points in each phase?
++ Less overlap = more likely to be differences between phases i.e. an effect!
++ Smaller variability within phases = easier to detect effects
++ Few overlapping data points between phases = intervention has had an effect.
++ Lots of overlap between data points in the two phases = minimal effect of intervention
 
 ![](images/Interpreting.png)
 
@@ -200,8 +354,12 @@ Lots of overlap between data points in the two phases – minimal effect of inte
 background-image: url(images/criteria.png)
 background-size: contain
 
+
+
+
 .footnote[
-Cohen et al (2013) Single-Case Research Design in Pediatric Psychology: Considerations Regarding Data Analysis. Journal of Pediatric Psychology,  39, 124-127. 
+Source: 
+<a href="https://academic.oup.com/jpepsy/article/39/2/124/884297">Cohen et al (2013)</a>.
 ]
 
 ---
@@ -218,18 +376,33 @@ Cohen et al (2013) Single-Case Research Design in Pediatric Psychology: Consider
 ![](images/base-trends.png)
 ]
 
-.footnote[Source: https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf]
+
+.footnote[For source click
+<a href="https://www.sjsu.edu/people/fred.prochaska/courses/ScWk240/s1/ScWk-240-Single-Case-Designs-Slides-Week-8.pdf">here</a>.
+]
 
 ---
 background-image: url(images/base-trends-2.png)
 background-size: cover
 
 ---
-#  Statistical analysis
+class: inverse, middle, center
+
+#  Statistical Analysis
+
+---
+layout: true
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+
+---
+
 ## Idiographic outcomes 
 
-+ Visual interpretation can be subjective so accompanying statistical analysis can aid interpretation
-However need to be aware;
+Visual interpretation can be subjective so accompanying statistical analysis can aid interpretation.
+
+.my-red[However] need to be aware;
 + Can be influenced by number of time points/length of baseline
 + Can be misleading if there is baseline trend
 + Often difficult to compare
@@ -238,29 +411,34 @@ However need to be aware;
 + Assumptions of many statistical tests are violated in time-series data (lack of independence caused by autocorrelation )
 
 ---
-#  Why is autocorrelation a problem? 
+# Autocorrelation
 
-+ Autocorrelation (also known as serial dependence) is the degree of similarity between one data point in a time series and a previous lagged time point i.e. how correlated are the data points
-E.g. Weather is autocorrelated: the noon temperature on a Wednesday is predicted by what the noon temperature was on Tuesday, and to a lesser extent what the noon temperature was on Monday, or Sunday.
-+ Time series data is often autocorrelated – a persons behaviour/thoughts/feelings are not random from day to day so the data is not strictly independent
-	+ But most statistical tests are based on the assumption that data are independent
-+ So when autocorrelation is present this assumption is violated and increases the risk of a Type 1 error (false positive)
+Autocorrelation (also known as serial dependence) is:
+
+.my-red[The degree of similarity between one data point in a time series and a previous lagged time point i.e. how correlated are the data points.]
+
+E.g., the weather is autocorrelated: the noon temperature on a Wednesday is predicted by what the noon temperature was on Tuesday, and to a lesser extent what the noon temperature was on Monday, or Sunday.
+
+Time series data is often autocorrelated. A persons behaviour/thoughts/feelings are not random from day to day so the data is not strictly independent
++ Statistical tests often based on the assumption that data are independent.
++ When autocorrelation is present this assumption is violated (increases risk of Type 1 error [false positive])
 
 ---
 #  SCED effect sizes
-## Metrics for capturing between phase differences 
+#### Metrics for capturing between phase differences 
 
 + Nonparametric (overlap) and parametric (SMD, LOR etc.)
-+ Historic, more commonly reported simple overlap statistics are highly criticised (e.g., PND)
-+ More recently developed overlap effect sizes have improved (e.g. Tau)
-+ Good practice to calculate more than one overlap metric
-+ Remember they are relative to whether the desired direction of improvement is shown by an increase or decrease in the measure
-	+ I.e., If desired outcome is increase , number of intervention data points that are higher than the baseline median
-	+ If desired outcome is decrease , number of intervention data points that are lower than the baseline median
++ Historicaly - simple, yet commonly used overlap statistics highly criticised (e.g., PND)
++ More recently developed overlap effect sizes have improved (e.g. NAP, Tau)
+
+Good practice to calculate more than one overlap metric
+
+Remember they are relative to whether the desired direction of improvement is shown by an increase or decrease in the measure
++ Desired outcome is .my-red[increase:] intervention data points that are higher than the baseline.
++ Desired outcome is .my-red[decrease:] intervention data points that are lower than the baseline.
 
 ---
-#  Non-overlap effect sizesComparing between phase differences 
-
+#  Non-overlap effect sizes
 
 ```{r tbl77, echo = FALSE}
 tbl77 <- tibble::tribble(
@@ -273,11 +451,12 @@ tbl77 <- tibble::tribble(
 "Tau/Tau-U","Tau provides an effect estimate that does not make any adjustments for baseline trend. Tau-U is similar to Tau but includes an adjustment for baseline trends.","No"
 )
 
-kableExtra::kable_styling(knitr::kable(tbl77), font_size = 12)
+kableExtra::kable_styling(knitr::kable(tbl77), font_size = 10)
 ```
 
 ---
-
+layout: false
+class: inverse
 
 .panelset[
 
@@ -349,6 +528,13 @@ Text.]
 ] <!--Panel-Set-End-->
 
 ---
+layout: true
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+
+---
+
 #  Example: Percentage exceeding the median (PEM) 
 
 + Calculate median of baseline
@@ -375,50 +561,55 @@ PAND=90.48%
 ---
 #  Interpreting non-overlap effect sizes  
 
-+ Effects are provided as a proportion (or *100 to make a %)
-+ The larger the effect size, the more effective the treatment
-+ No agreed way to interpret the effect sizes
-+ But Scruggs & Mastropieri (1998) suggested the following interpretation;
-	+ >0.90(or 90%) indicative of a very effective treatment
-	+ 0.70-0.89 (or 70-89%) represent moderate effectiveness
-	+ 0.50-0.69 (or 50-69%) are debatably effective
-	+ <0.50 (50%) are regarded as not effective
+Effects are provided as a proportion (or *100 to make a %)
+
+The larger the effect size, the more effective the treatment
+
+.my-red[No agreed] way to interpret effect sizes but Scruggs & Mastropieri (1998) suggested the following interpretation;
++ 0.90+(or 90%) indicative of a very effective treatment
++ 0.70-0.89 (or 70-89%) represent moderate effectiveness
++ 0.50-0.69 (or 50-69%) are debatably effective
++ <0.50 (50%) are regarded as not effective
 
 ---
-#  Assessing and adjusting for baseline trend using Tau/Tau-U  
+#  Tau/Tau-U for baseline trend
 
-+ Tau/Tau-U family of effect sizes calculates overlap even in highly variable data, corrects for trend and is robust to serial dependency/autocorrelation.
-+ If baseline phases on ideographic outcomes are stable, then Tau ( τ AvsB )  is a better index of outcome, as opposed to Tau-U ( τ( AvsB )- Atrend ).
-  + Assess whether there is a significant trend in the baseline phase (Tau trend A )
-	+ If there is a significant baseline trend (p<.05), then an adjustment can be applied – corrects for the baseline trend for comparisons across phases
-	+ Calculate the Tau effect size for the difference between phases, either based on the corrected (Tau-U τ( AvsB )- Atrend ) or uncorrected data (Tau τ AvsB ).
+Tau/Tau-U family of effect sizes calculates overlap with adjustments for baseline trend and is robust to serial dependency (autocorrelation).
 
-.footnote[Online Tau calculator: http://ktarlow.com/stats/tau/ or Overlap Shiny app: https://manolov.shinyapps.io/Overlap/
-[http://ktarlow.com/stats/tau/](http://ktarlow.com/stats/tau/)
-[https://manolov.shinyapps.io/Overlap/](https://manolov.shinyapps.io/Overlap/)
-]
+If baseline data is stable (for time series data) then Tau (τ AvsB) is a sufficient index of outcome. If there is significant trend then use Tau-U (τ AvsB-Atrend ).
+
+so first assess whether there is a significant trend in the baseline phase (Tau trend A). If there is a significant baseline trend (p<.05) then adjust using Tau-U.
+
+Dont do this by hand!
+- Online Tau calculator: http://ktarlow.com/stats/tau OR
+- Shiny apps: https://manolov.shinyapps.io/Overlap/
+
 
 ---
 #  Comparing multiple phases  
 
-+ If you have more than two phases (i.e. any design other than A/B) then do pairwise comparisons of effects for each phase where it is of interest to see if there is a difference
-	+ E.g. AB-F/U design
-	+ Baseline (A) vs intervention (B)
-	+ Baseline (A) vs follow-up (FU)
-	+ See example published papers of different designs in your pack
+If you have more than two phases (i.e. any design other than A/B) then do pairwise comparisons for each bi-phasic combination of interest.
+
+In example of AB-F/U design:
++ Baseline (A) vs intervention (B)
++ Baseline (A) vs follow-up (FU)
++ See example published papers of different designs in your pack
 ![](images/multi-base-png.png)
 
 ---
 #  Assessing nomothetic outcomes 
 
-+ Supplement the idiographic findings by evaluating whether pre/post phase scores on nomothetic measures meet criteria for reliable and clinical significant change (Jacobson & Traux , 1991)
-+ Has the client shown reliable change (RC) -  a reduction in scores that exceeds a change that could be due to measurement error
-	+ Use the reliability (Cronbach’s Alpha) of the measure and non-clinical and clinical. norms to calculate the amount of change that would be considered reliable
-+ Has the client shown clinically significant change (CSC) – moved from above to below a clinical cut-off threshold
-	+ Can use defined clinical cut-off’s if available for the measure or can use clinical and non-clinical norms to calculate a threshold.
-	+ Bear in mind that process or generalisation measures may not make conceptual sense to assess clinically significant change (e.g. activation or quality of life).
+Does pre/post phase scores on nomothetic measures meet criteria for reliable and clinical significant change (Jacobson & Traux, 1991)?
+1. Has the client shown a .my-red[reliable change] (RC)?
+  + Reduction in scores beyond that which could be due to measurement error.
+  + The RC threshold will be published for most widely used measures.
+	+ If there isnt one then this can be calculated! Use the reliability (Cronbach’s Alpha) of the measure and non-clinical and clinical norms to calculate the RC.
+2. Has the client shown .my-red[clinically significant change]? (CSC)
+  + Moved from above to below a clinical cut-off threshold.
+	+ Use defined cut-off’s (if available) or calculate using clinical and non-clinical norms.
+	+ Process or generalisation measures may not make conceptual sense to assess clinically significant change (e.g. activation or quality of life).
 
-.footnote[An Excel workbook & manual is provided in the Resource Pack that will allow you to do this!]
+An Excel workbook & manual is provided in the Resource Pack that will allow you to do this!
 
 ---
 #  Evaluating nomothetic outcomes using reliable & clinically significant change 
@@ -437,85 +628,100 @@ PAND=90.48%
 ---
 #  What do you need to include in your assignment? 
 
-VISUAL ANALYSIS
-+ Visual plots of every idiographic measure
-	+ Include phase trend lines and baseline median line
-SUMMARY DESCRIPTIVES
-+ Report means & SDs for each idiographic measure in each phase
-STATISTICAL ANALYSIS
-+ Assess for baseline trend (appropriate Tau correction if trend is present)
+1. .bold[Visual analysis:]
+  + Visual plots of every idiographic measure.
+	+ Include phase trend lines and baseline median line.
+2. .bold[Summary descriptives:]
+  + Report means & SDs for each idiographic measure in each phase
+3. .bold[Statistical analysis:]
+  + Assess for baseline trend (appropriate Tau correction if trend is present)
 	+ Report at least 3 non-overlap statistics
-	+ Assess autocorrelation in data (instructions provided in resources)
-NOMOTHETIC OUTCOMES
-+ Calculate whether RC and CSC have occurred for the primary nomothetic measure (main symptom or distress measure – CORE-OM?).
+	+ Assess autocorrelation in data (instructions provided in resources).
+4. .bold[Nomothetic outcomes:]
+  + Calculate whether RC and CSC have occurred for the primary nomothetic measure.
 	+ For the other nomothetic measures calculate RC and if relevant, calculate CSC.
 
 ---
 #  Deciding what software to use 
 
-+ Data input and management: Excel
-	+ Lots of the analysis can be done by hand (if you want)
-	+ More sophisticated techniques require software/web calculators (they will also do the simpler analyses/visualisation as well!)
-	+ See SingleCaseSoftware table for summary of some of the available programs/web calculators for SCED analysis
-		+ What you can do in each program
-		+ Benefits and limitations of each program
-		+ Complexity to learn
+Data input and management: MS Excel
+
+Lots of the analysis can be done by hand (if you want!)
+
+More sophisticated techniques require software/web calculators (they will also do the simpler analyses/visualisation as well!)
+
+See SingleCaseSoftware table (next slides) for summary of some of the available programs/web calculators for SCED analysis.
++ What you can do in each program
++ Benefits and limitations of each program
++ Complexity to learn
 
 ---
 #  Quick intro to SCED software 
 
 + Microsoft Excel
-	+ Tau online calculator: http://ktarlow.com/stats/tau/
-	+ Jepusto Shiny app: https://jepusto.shinyapps.io/SCD-effect-sizes/
-	+ SCDA Shiny app: https://tamalkd.shinyapps.io/scda/
-	+ Overlap Shiny app: https://manolov.shinyapps.io/Overlap/
++ Tau online calculator: http://ktarlow.com/stats/tau/
++ Jepusto Shiny app: https://jepusto.shinyapps.io/SCD-effect-sizes/
++ SCDA Shiny app: https://tamalkd.shinyapps.io/scda/
++ Overlap Shiny app: https://manolov.shinyapps.io/Overlap/
 [http://ktarlow.com/stats/tau/](https://jepusto.shinyapps.io/SCD-effect-sizes/)
 [https://jepusto.shinyapps.io/SCD-effect-sizes/](http://ktarlow.com/stats/tau/)
 [https://tamalkd.shinyapps.io/scda/](https://manolov.shinyapps.io/Overlap/)
 [https://manolov.shinyapps.io/Overlap/](https://tamalkd.shinyapps.io/scda/)
 
 ---
-
-![](images/software.png)
+layout: false
+background-image: url(images/software.png)
+background-position: 50% 50%
+background-size: 1200px 680px
 
 ---
+background-image: url(images/resource-pack.png
+background-position: 50% 85%
+background-size: 1000px 500px
+
 #  SCED Resource Pack 
 
-![](images/resource-pack.png)
 
 ---
-#  Practical task – have a go at SCED analysis 
+class: inverse
 
-+ We will divide you into groups of 4
-+ Two example datasets – each group will be assigned a dataset
-	+ Adult mental health setting (AB-F/U)
-	+ Adult inpatient setting (AB)
-+ Each has a guide to walk you through conducting and reporting the analysis in different types of software
-+ There are multiple idiographic measures – you don’t have to do all of them in the practical – the examples are provided so you have a guide for the full analysis process you will need to do for your assignment
-	+ You may want to divide the measures up between your group
+#  Practical task
+### Have a go at SCED analysis 
+
+We will divide you into groups of 4
+
+Two example datasets – each group will be assigned a dataset [either Adult mental health setting (AB-F/U) OR Adult inpatient setting (AB)]
+
+Each has a guide to walk you through conducting and reporting the analysis in different types of software
+
+There are multiple idiographic measures – you don’t have to do all of them in the practical – the examples are provided so you have a guide for the full analysis process you will need to do for your assignment
++ You may want to divide the measures up between your group
 
 ---
 #  Feedback your findings 
 
-+ Feedback–informal overview of findings (~5-10 mins per group)
-+ Things to report on;
-  + Visual plot of each idiographic measure
-	+ Assess whether there is a baseline trend using Tau/Tau-U
-	+ Calculate x3 non-overlap statistics (Tau/Tau-U counts as one!)
-	+ Descriptive statistics for each phase (means and SDs)
-	+ RCSI analysis of nomothetic outcomes
-PowerPoint template provided to copy and paste your results into!
-+ Don’t worry too much about having a detailed interpretation!
-	+ This is about getting you to practice having a go so we can troubleshoot any problems now and a way of showing the different resources and what they are able to do
-	+ Plus each dataset has a summary of the results so you can sense check if you have produced the same findings – just don’t cheat!
+Present informal overview of findings (~5-10 mins per group).
+
+PowerPoint template provided to copy and paste your results into.
+
+Things to report on;
+- Visual plot of each idiographic measure
+- Assess whether there is a baseline trend using Tau/Tau-U
+- Calculate x3 non-overlap statistics (Tau/Tau-U counts as one!)
+- Descriptive statistics for each phase (means and SDs)
+- RCSI analysis of nomothetic outcomes
+
+Don’t worry too much about having a detailed interpretation!
++ This is about practicing, troubleshooting any becoming familliar with the resources.
++ Each dataset has a summary of the results so you can sense check if you have produced the same findings – just don’t cheat!
 
 ---
 #  Feedback 
 
 + How did you find using the different SCED software?
-	+ Any problems?
-	+ Any questions/queries?
-	+ Anything you are concerned/unsure about?
++ Any problems?
++ Any questions/queries?
++ Anything you are concerned/unsure about?
 
 ---
 name: last-slide
