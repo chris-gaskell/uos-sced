@@ -126,7 +126,7 @@ Measures
 
 Designs
 
-Setting it up
+Setting it up]
 ]]]
 
 --
@@ -466,37 +466,40 @@ class: inverse
 
 .panelset[
 
-.panel[.panel-name[Visual] <!--Front-->
-.small[.pull-left-narrow[Supplementing Visual Analysis]]
-.pull-right-wide[Use visual aids to help with interpretation.]
+.panel[.panel-name[Non-overlaps] <!--Front-->
+.small[.pull-left-narrow[ ]]
+.pull-right-wide[ ]
 ]
 
 
 .panel[.panel-name[PND] <!--PND-->
 
-.small[.pull-left-narrow[How to calculate PND]]
+
+
+.small[.pull-left-narrow[
+# Percentage of non-overlapping data]]
 
 .pull-right-wide[
-### .center[PND]
 
-.center[![](images/visual-supp-trend-bands.png)]]
+.center[![](images/overlap/PND.png)]]
 
-.right[.small[Original article = <a href="link">(ref)</a>.]]
+.right[.small[Original article = <a href="https://journals.sagepub.com/doi/pdf/10.1177/0145445511399147?casa_token=00pxUhWx0BwAAAAA:aFyCI-2bXjdfSEg94bRoHvkRAXMNs71Np3IgUbsSey2QRHFC3BmPUozeMOMBAWiPIA53Vm230g">(Parker et al., 2011)</a>]]
 
 ] <!--PEM-->
 
 
 .panel[.panel-name[PEM]
 
-.pull-left-narrow[Text]
+.pull-left-narrow[
+.small[.pull-left-narrow[
+# Percentage of data exceeding the medium]]
+]
 
 .pull-right-wide[
-### .center[PEM]
 
-.center[![](images/visual-supp-trend-bands.png)]]
+.center[![](images/overlap/PEM.png)]]
 
-.right[.small[Original article = <a href="link">(ref)</a>.]]
-
+.right[.small[Original article = <a href="https://journals.sagepub.com/doi/pdf/10.1177/0145445511399147?casa_token=00pxUhWx0BwAAAAA:aFyCI-2bXjdfSEg94bRoHvkRAXMNs71Np3IgUbsSey2QRHFC3BmPUozeMOMBAWiPIA53Vm230g">(Parker et al., 2011)</a>]]
 
 
 
@@ -504,31 +507,31 @@ class: inverse
 
 .panel[.panel-name[PAND]
 
-.pull-left-narrow[Text]
+.pull-left-narrow[
+# Percentage of all non-overlapping data
+]
 
 .pull-right-wide[
-### .center[PAND]
 
-.center[![](images/visual-supp-trend-bands.png)]]
+.center[![](images/overlap/PAND.png)]]
 
 
-.right[.small[Original article = <a href="link">(ref)</a>.]]
-
+.right[.small[Original article = <a href="https://journals.sagepub.com/doi/pdf/10.1177/0145445511399147?casa_token=00pxUhWx0BwAAAAA:aFyCI-2bXjdfSEg94bRoHvkRAXMNs71Np3IgUbsSey2QRHFC3BmPUozeMOMBAWiPIA53Vm230g">(Parker et al., 2011)</a>]]
 ] <!--NAP-->
 
 .panel[.panel-name[NAP]
 .pull-left-narrow[
-Text.]
+# Non-overlap of all pairs
+]
 
 .pull-right-wide[
-### .center[NAP]
+
 .center[
-.center[![](images/visual-supp-trend-bands.png)]]
+.center[![](images/overlap/NAP.png)]]
 
 ]
 
-.right[.small[Original article = <a href="link">(ref)</a>.]]
-]
+.right[.small[Original article = <a href="https://journals.sagepub.com/doi/pdf/10.1177/0145445511399147?casa_token=00pxUhWx0BwAAAAA:aFyCI-2bXjdfSEg94bRoHvkRAXMNs71Np3IgUbsSey2QRHFC3BmPUozeMOMBAWiPIA53Vm230g">(Parker et al., 2011)</a>]]]
 
 
 ] <!--Panel-Set-End-->
@@ -690,19 +693,19 @@ background-size: 1000px 500px
 
 ---
 name:practice-slide
-class: inverse
+class: inverse, center, top
 
 #  Practical task
-### Have a go at SCED analysis 
-
+.left[.white[
 We will divide you into groups of 4
 
-Two example datasets – each group will be assigned a dataset [either Adult mental health setting (AB-F/U) OR Adult inpatient setting (AB)]
+Two example datasets – each group will be assigned a dataset either Adult mental health setting (AB-F/U) OR Adult inpatient setting (AB)
 
 Each has a guide to walk you through conducting and reporting the analysis in different types of software
 
 There are multiple idiographic measures – you don’t have to do all of them in the practical – the examples are provided so you have a guide for the full analysis process you will need to do for your assignment
 + You may want to divide the measures up between your group
+]]
 
 ---
 #  Feedback your findings 
