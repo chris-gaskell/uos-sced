@@ -118,15 +118,15 @@ background-size: 375px 300px
 
 .Large[.bold[
 ### Day 1
-[Aims + Intro](#aims-slide)
+Aims + Intro
 
-[Why](#why-slide)
+Why
 
-[Measures](#measures-slide)
+Measures
 
-[Designs](#designs-slide)
+Designs
 
-[Setting it up](#stages-slide)]
+Setting it up
 ]]]
 
 --
