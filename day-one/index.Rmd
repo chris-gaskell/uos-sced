@@ -177,7 +177,7 @@ background-size:
 .footnote[
 .pull-left[
 .Large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
-This presentation is also available as a <a href="https://chris-gaskell.github.io/uos-sced/day-one/output/day-one.pdf">pdf</a>.
+This presentation is also available as a <a href="https://chris-gaskell.github.io/uos-sced/day-one/output/day-one.pdf">pdf</a> and <a href="https://chris-gaskell.github.io/uos-sced/day-one/output/day-one.pptx">powerpoint</a>
 
 
 .Large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
