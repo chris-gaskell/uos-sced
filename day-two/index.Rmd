@@ -79,7 +79,7 @@ NHS Foundation Trust]
 [`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Mel-Simmonds-Buckley)
 ]]
 .column.bg-main3[.content[
-<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1371177930236293126/Sf9QTdef_400x400.jpg" width="150px"/>
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="150px"/>
 
 ### Chris Gaskell
 
@@ -90,7 +90,7 @@ NHS Foundation Trust]
 
 [`r icons::icon_style(icons::fontawesome("twitter"), scale = 1.5)` ](https://twitter.com/chrisgaskell92)
 [`r icons::icon_style(icons::fontawesome("github"), scale = 1.5)`](https://github.com/chris-gaskell)
-[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:cgaskell1@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:chris-gaskell@hotmail.co.uk)
 [`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=gQuNwfYAAAAJ&hl=en&authuser=1&oi=ao)
 [`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Chris-Gaskell-2)
 ]]
@@ -142,8 +142,8 @@ background-size: 375px 300px
 
 [Practice](#practice-slide)
 
-[Resources](#resources-slide)]
-
+<a href="https://sced-for-clinicians.netlify.app/resources/">Resources</a>
+]
 ]]]]
 
 --
@@ -172,7 +172,10 @@ background-size:
 `r icons::icon_style(icons::fontawesome("pen"), scale = 1, fill = "var(--my-yellow)")`
 .large[.white[Scribble on slides] - Press 's'.]
 
+--
+
 .footnote[
+.pull-left[
 .Large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
 This presentation is also available as a <a href="https://chris-gaskell.github.io/uos-sced/output/index.pdf">pdf</a>.
 
@@ -180,7 +183,7 @@ This presentation is also available as a <a href="https://chris-gaskell.github.i
 .Large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
 If you find any problems with these slides then e-mail
 <a href="mailto:cgaskell1@sheffield.ac.uk">Chris</a>.
-]
+]]
 
 --
 .pull-right[
@@ -386,6 +389,7 @@ background-image: url(images/base-trends-2.png)
 background-size: cover
 
 ---
+name: analysis-slide
 class: inverse, middle, center
 
 #  Statistical Analysis
@@ -683,6 +687,7 @@ background-size: 1000px 500px
 
 
 ---
+name:practice-slide
 class: inverse
 
 #  Practical task

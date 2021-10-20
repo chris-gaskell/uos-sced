@@ -79,7 +79,7 @@ NHS Foundation Trust]
 [`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Mel-Simmonds-Buckley)
 ]]
 .column.bg-main3[.content[
-<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1371177930236293126/Sf9QTdef_400x400.jpg" width="150px"/>
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="150px"/>
 
 ### Chris Gaskell
 
@@ -90,7 +90,7 @@ NHS Foundation Trust]
 
 [`r icons::icon_style(icons::fontawesome("twitter"), scale = 1.5)` ](https://twitter.com/chrisgaskell92)
 [`r icons::icon_style(icons::fontawesome("github"), scale = 1.5)`](https://github.com/chris-gaskell)
-[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:cgaskell1@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:chris-gaskell@hotmail.co.uks)
 [`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=gQuNwfYAAAAJ&hl=en&authuser=1&oi=ao)
 [`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Chris-Gaskell-2)
 ]]
@@ -137,11 +137,12 @@ background-size: 375px 300px
 ### Day 2
 
 .bold[
-[Analysis](#analysis-slide)
+Analysis
 
-[Practice](#practice-slide)
+Practice
 
-[Resources](#resources-slide)]
+<a href="https://sced-for-clinicians.netlify.app/resources/"> Resources </a>
+]
 
 ]]]]
 
@@ -171,7 +172,10 @@ background-size:
 `r icons::icon_style(icons::fontawesome("pen"), scale = 1, fill = "var(--my-yellow)")`
 .large[.white[Scribble on slides] - Press 's'.]
 
+--
+
 .footnote[
+.pull-left[
 .Large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
 This presentation is also available as a <a href="https://chris-gaskell.github.io/uos-sced/output/index.pdf">pdf</a>.
 
@@ -179,7 +183,7 @@ This presentation is also available as a <a href="https://chris-gaskell.github.i
 .Large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
 If you find any problems with these slides then e-mail
 <a href="mailto:cgaskell1@sheffield.ac.uk">Chris</a>.
-]
+]]
 
 --
 .pull-right[
@@ -212,12 +216,36 @@ name: aims-slide
 
 
 ---
+layout: true
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+---
 #  Aims of the workshop
 
 + .blue[Review the application] of SCED methodology within clinical research and practice.
 + Consider potential .blue[practical difficulties] in implementation of SCED.
 + Provide .blue[practical experience] of design and analysis.
 + Foresee potential difficulties and .blue[trouble-shoot].
+
+---
+layout: false
+class: inverse, top, center
+
+# Is change important?
+
+.left[.white[
+.Large[Q. Why is change (across treatment) important?]
+
+.Large[Q. What are the ways in which we can demonstrate if change has occured?]
+
+.Large[Q. What are the implications of not attempting to establish if change has occured?]
+
+.Large[Q. What is my relationship to outcome measurement, questionnaires, assessments etc.?]]]
+
+.footnote[
+.large[*10 minute discussion task in pairs]
+]
 
 ---
 #  Hopes for the workshop
@@ -242,7 +270,8 @@ name: aims-slide
 + Submit via Unidrive (not Turnitin).
 + Ethical approval for this in place
 + Patient information & consent forms on MUSE (for your appendix).
-]
+
+We are going to give you everything you need in order to be able to pass your assignment.]
 
 
 .pull-right[<img src="https://i.imgflip.com/2f6v9k.jpg" alt="Trulli" alt="Girl in a jacket" width="75%" height="75%">
@@ -261,6 +290,7 @@ background-position:5% 95%, 98% 96%
 background-size: 110px 50px, 10%
 
 ---
+exclude: true
 # Brief history slide
 
 ---
@@ -298,12 +328,6 @@ background-size: 70% 30%
 
 + .blue[Repeated measurements] before treatment is introduced.
 
-???
-
-so that the ‘natural course’ of the outcome is known.
-
---
-
 + The ideal is .blue[long and stable] baselines.
 
 --
@@ -315,10 +339,6 @@ so that the ‘natural course’ of the outcome is known.
 + Are neutral baselines are a fallacy?
 ]
 
-???
-- so don’t always expect a stable baseline
-- you have contact with the service user; you are assessing them.
---
 
 .pull-right[
 <img src="https://media.makeameme.org/created/one-does-not-5ac35f.jpg" alt="Girl in a jacket" width="370" height="300">
@@ -328,10 +348,14 @@ so that the ‘natural course’ of the outcome is known.
 
 #  The focus? 
 
-+ Your .blue[individual] service user.
-+ .blue[You], the clinician.
-+ Why and what leads to change in this client?
-+ Within client change rather than across client change.
+.Large[
+- Your .blue[individual] service user.
+
+- .blue[You], the clinician.
+
+- Why and what leads to change?
+
+- Within client change rather than across client change.]
 
 ---
 name: why-slide
@@ -339,7 +363,6 @@ class: inverse, middle, center
 layout: false
 
 # Why use SCEDs? 
-
 
 ---
 layout: true
@@ -454,7 +477,6 @@ Ability to answer questions that are .red[clinically relevant variants on those 
 </figure>
 ]
 
---
 
 .pull-right[
 <img src="https://www.lanternaeducation.com/wp-content/uploads/2017/01/how-does-it-work-meme.jpg" alt="Girl in a jacket" width="380" height="260">]
@@ -464,30 +486,34 @@ Ability to answer questions that are .red[clinically relevant variants on those 
 #  What’s the advantage of SCED? 
 
 .pull-left[
-+ Low cost
-+ Low infrastructure
-+ Small ‘turning circle’
-+ Easily adaptable + flexible
-+ Collaborative (if done right)
-]
+.Large[
+- Low cost
+
+-  Low infrastructure
+
+- Small ‘turning circle’
+
+- Easily adaptable + flexible
+
+- Collaborative (if done right)
+]]
 --
 
 .pull-right[
 .Large[.white[.my-hot-blue[**Available for all clinicians to use!**]]].
-
-.center[
-<img src="https://www.worldoffemale.com/wp-content/uploads/2019/04/you-can-do-it-meme-72.jpg" alt="Girl in a jacket" width="480" height="270">]
 ]
 
 ---
 #  Why don’t clinicians use it? 
-
+.Large[
 + Lack of confidence
+
 + Lack of knowledge
-+ Can be messy in practice.
-  + The ideal described in the classic texts on the design seems a far cry from what is possible in the real world.
-+ Perception that it is too much for the recipient to handle.
-  + <a href="http://www.dgapractice.com/documents/meehl_case_conferences_adapted.pdf">Theory of Spun Glass</a> (Meehl, 1973)
+
++ Can be messy in practice - The ideal described in the classic texts on the design seems a far cry from what is possible in the real world.
+  
++ Perception that it is too much for the recipient to handle - <a href="http://www.dgapractice.com/documents/meehl_case_conferences_adapted.pdf">Theory of Spun Glass</a> (Meehl, 1973)
+]
 
 ---
 name: measures-slide
@@ -575,7 +601,8 @@ A funnel approach from nomothetic to idiographic target measures
 
 <p>Nomothetic and ideographic has long tradition within psychotherapy Sheffield University (e.g., Barkham, Stiles, & Shapiro, 1993).</p>
 
-.footnote[
+
+.center[
 <a href="https://eprints.whiterose.ac.uk/104190/1/Commentary%20on%20Alves%20and%20Sales%20final%20version.pdf"> Barkham commentary (2017) </a>
 ]
 
@@ -592,7 +619,7 @@ https://dclinpsych.leeds.ac.uk/wp-content/uploads/sites/26/2019/03/Gary-Latchfor
 
 
 .center[
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS805ImzbghI67DjNetq3iij46BS0YdSuadlg&usqp=CAU" alt="Girl in a jacket" width="900" height="">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS805ImzbghI67DjNetq3iij46BS0YdSuadlg&usqp=CAU" alt="Girl in a jacket" width="900" height="200">
 ]
 ---
 #  Using nomothetic measures  
@@ -670,7 +697,7 @@ class: inverse
 
 What is a suitable number of measurements (observations) for a baseline?
 
-Some argue that there should be stability (5% variability around mean) before progressing to intervention .red[(Sidman ???)] however this is not always essential (or realistic).
+Some argue that there should be stability (5% variability around mean) before progressing to intervention however this is not always essential (or realistic).
 
 When does the baseline end? (should be at a defined, planned point). A good place may be when providing the formulation (if using one).
 
@@ -691,7 +718,7 @@ Problems arise if baselines display:
 Presence of these makes visual or statistical analysis more difficult **(but still possible)**.
 
 ---
-# Control idiographic measure 
+# Control measure 
 
 + These are an idiographic measure, not expected to change due to the intervention
 + If there is change in the target idiographic measures and not the control is shows the intervention working.
@@ -711,16 +738,17 @@ Presence of these makes visual or statistical analysis more difficult **(but sti
 
 ---
 layout: false
-class: inverse
+class: inverse, top, center
 
-#  Modelling and role play  
+# Modelling and role play
 
-+ Lets decide as a group what the client will be presenting with and in what context
+.white[.Large[
+Lets decide as a group what the client will be presenting with and in what context
 
-+ What the demonstration and then we can critique it
+What the demonstration and then we can critique it
 
-+ Then you will get to practice in 2s – you both have a go.
-
+Then you will get to practice in 2s – you both have a go.
+]]
 ---
 name: designs-slide
 class: inverse, middle, center
@@ -783,10 +811,11 @@ Design influences strength of validity.
 .panel[.panel-name[A-B-FU]
 
 .pull-left-narrow[
+.small[
 - Multiple comparisons possible.
 - Can assess maintenance of gains.
 - stronger than A-B design.
-]
+]]
 
 .pull-right-wide[
 ### .center[Integrating a follow-up]
@@ -806,10 +835,10 @@ Design influences strength of validity.
 .panel[.panel-name[A-B-A-B]
 
 .pull-left-narrow[
-- Another point.
-- Another point.
-- Another point.
-]
+.small[
+- Are the effects of the intervention durable?
+- What happens if the treatment is withdrawn?
+]]
 
 .pull-right-wide[
 ### .center[Using a withdrawal phase]
@@ -828,9 +857,10 @@ Design influences strength of validity.
 
 .panel[.panel-name[A-B-A-C]
 .pull-left-narrow[
+.small[
 - Comparing treatment effectiveness.
 – Seldom employed in psychotherapy .
-]
+]]
 
 .pull-right-wide[
 ### .center[Alternating the treatment]
@@ -850,21 +880,22 @@ Ask yourself "am I being ethical and so are reversals or withdrawals appropriate
 
 .pull-left[
 ###  Theoretical consdiderations
-
+.small[
 + Are treatments reversible?
 + Carry-over effects.
 + Therapeutic instructions (e.g. self-control / management strategies)
 + long-acting pharmacological interventions;
 + altered environments & staff attitudes.
-]
+]]
 
 .pull-right[
 ###  Ethical considerations 
+.small[
 + Prior agreement with client/staff needed, along with consent.
 + Brief withdrawal phase and rapid re-instatement of treatment
 + Client's expectations and adherence to withdrawal
 + Treatment holidays?
-]
+]]
 ---
 
 #  Threats to validity
@@ -908,24 +939,25 @@ class: inverse, middle, center
 #  Stages of SCED  
 
 ---
-class: inverse
+class: inverse, center, top
 
-.center[.Large[
-1-Identify question and hypothesis.
+# The stages of a SCED
+.left[.large[.white[
+1. Identify question and hypothesis.
 
-2-Select appropriate design and measures.
+2. Select appropriate design and measures.
 
-3- identify materials and resources.
+3. identify materials and resources.
 
-4- Collect data/supervise study.
+4. Collect data/supervise study.
 
-5- Analysis .small[(covered in day 2)]
+5. Analysis .small[(covered in day 2)]
 
-6- Interpretation.
+6. Interpretation.
 
-7- Communication/dissemintation.
+7. Communication/dissemintation.
 ]]
-.footnote[These stages may need to be considered collectively and not in isolation.  For example. The level of communication of findings may determine the level of analysis adopted.]
+.footnote[These stages may need to be considered collectively and not in isolation.  For example. The level of communication of findings may determine the level of analysis adopted.]]
 
 ---
 #  Identify clinical question and hypotheses
@@ -945,8 +977,8 @@ Hypotheses can be developed as soon as you have any sense of what the subject of
 #  Identify measures
 
 - What measures are required to assess the therapeutic aims and goals?
-  - Nomothetic before/after each phase?
-  - Idiographics daily throughout?
+- Nomothetic before/after each phase?
+- Idiographics daily throughout?
 
 Ensure measures are suitable for SCED. In practice this usually means:
 - Observational measures such as time sampling and staff checklists on in-patient ward
@@ -983,7 +1015,7 @@ Staff need to be properly briefed:
 - Any involved staff on wards are briefed.
 
 ---
-#  Materials and resources
+#  Materials & resources
 
 If staff are collecting the data do they understand the design rationale and do they need any training?
 
@@ -1009,10 +1041,18 @@ Is it feasible in the setting your working in?
 ---
 #  Communication and dissemination
 
-Share the findings with the client and/or the staff member.
+.Large[
+- Share the findings with the client and/or the staff member.
 
-Thank client and staff.
+- Thank client and staff.
 
+There are robust research findings demonstrating that...
+
+Feeding back outcomes to patients during treatment leads to greater outcomes.
+
+**Particularly** for patients who are not on track.
+
+]
 
 
 ---
@@ -1154,11 +1194,9 @@ class: inverse, middle, center
 #  End of Day one
 
 
-
-
 ```{r output, include=F, echo=F}
-#xaringanBuilder::build_pdf("index.Rmd",
- #        complex_slides = T, partial_slides = F)
+#xaringanBuilder::build_pptx("index.Rmd",
+#        complex_slides = T, partial_slides = F)
 ```
 
 
