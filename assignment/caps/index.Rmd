@@ -220,13 +220,3 @@ kableExtra::kable_styling(knitr::kable(tbl54), font_size = 25)
 + Examples of the idiographic data collection tools (e.g. observational schedules by staff or patient daily diaries) should be placed in the appendices and care should be taken to ensure that they are anonymous.  Redact personal information.
 + As the UP is a modularised approach, the CAP trainees should also submit an excel sheet in which the idiographic measures are clearly labelled in terms of dates of completion by the service user and the progression through the UP modules.
 + The signed consent form
-
----
-#  Conclusions 
-
-- SCED can be used in a wide variety of situations and these range across service users and settings.
-- As trainee scientist-practitioners – a good place to be.
-- Integrate the methods into your practice – don’t be anxious.
-- Always start with the baseline - the design can evolve and be flexible
-- This is still all about your client. Your job is to help them, not t merely manipulate variables and phases.
-- Play around with the methodology

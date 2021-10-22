@@ -1,0 +1,207 @@
+---
+title: 'DClinPsy Assignment Guidance'
+subtitle:
+  - 'single case experimental design coursework'
+author:  University of Sheffield - Clinical and Applied Psychology Unit
+institute: false
+date: false
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["custom.css", "fonts.css", "default", "default-fonts", "hygge", "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    nature:
+      ratio: 16:9
+      titleSlideClass: ["top", "center"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+#setwd("/Users/christophergaskell/Desktop/uos-sced/assignment/guidance/caps")
+
+library(xaringan)
+library(xaringanExtra)
+library(dplyr)
+library(gganimate)
+library(ggExtra)
+library(xaringanthemer)
+library(RColorBrewer)
+library(vembedr)
+
+xaringanExtra::use_editable()
+xaringanExtra::use_panelset()
+xaringanExtra::use_freezeframe()
+xaringanExtra::use_webcam()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_progress_bar(color = "red", location = "top")
+xaringanExtra::use_tile_view()
+xaringanExtra::use_scribble()
+#xaringanExtra::use_search(show_icon = T, auto_search = F, position = "")
+xaringanExtra::use_logo(image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png")
+xaringanExtra::use_share_again()
+
+```
+class: center, middle, split-three, about-me-slide
+background-image: url(uos.png), url(pearls.jpg)
+background-position:5% 95%, 98% 96%
+background-size: 110px 50px, 10%
+
+.column.bg-main1[.content[
+<img style="border-radius: 50%;" src="https://catalyse.uk.com/wp-content/uploads/sites/3/2015/10/SKcrop.jpg" width="150px"/>
+
+### Steve Kellett
+
+#### Clinical Psychologist
+
+.fade[Sheffied Health & Social Care
+NHS Foundation Trust]
+
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:s.kellett@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Stephen-Kellett)
+]]
+.column.bg-main2[.content[
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1235537191683723265/Qo6rZ317_400x400.jpg" width="150px"/>
+
+### Mel Simmonds-Buckley
+
+#### Researcher
+
+.fade[University of Sheffield]
+
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:m.simmonds-buckley@sheffield.ac.uk)
+[`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=T85W7TYAAAAJ&hl=en)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Mel-Simmonds-Buckley)
+]]
+.column.bg-main3[.content[
+<img style="border-radius: 50%;" src="https://pbs.twimg.com/profile_images/1434417640920002563/ZS62zhXl_400x400.jpg" width="150px"/>
+
+### Chris Gaskell
+
+#### Clinical Psychologist
+
+.fade[Salford Royal
+NHS Foundation Trust]
+
+[`r icons::icon_style(icons::fontawesome("twitter"), scale = 1.5)` ](https://twitter.com/chrisgaskell92)
+[`r icons::icon_style(icons::fontawesome("github"), scale = 1.5)`](https://github.com/chris-gaskell)
+[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1.5)`](mailto:chris-gaskell@hotmail.co.uks)
+[`r icons::icon_style(icons::fontawesome("graduation-cap"), scale = 1.5)`](https://scholar.google.com/citations?user=gQuNwfYAAAAJ&hl=en&authuser=1&oi=ao)
+[`r icons::icon_style(icons::fontawesome("researchgate"), scale = 1.5)`](https://www.researchgate.net/profile/Chris-Gaskell-2)
+]]
+
+---
+
+class: inverse, center, middle
+
+# Assignment Guidance
+
+---
+
+#  What can you submit?  
+
+- The design of the submission needs to either be quasi-experimental or a SCED.  The design of quasi-single case experiments is A/B.  
+- It is advantageous but not necessary to have a follow-up phase (i.e. an A/B-FU design) in which the idiographic measures continue to be collected and the nomothetic measure(s) are collected at the final follow-up.  
+- Trainees are also encouraged to consider completing a true SCED in which a cross-over design is used (e.g. A/B/C where B is systemic therapy and C is CBT) or where there is a treatment removal component (i.e. ABA, or ABAB).  
+- All designs need to be agreed in clinical supervision, and treatment withdrawal particularly considered due to the associated ethical issues.  
+
+
+---
+# Coursework Structure 
+
+- Title
+- Introduction
+- Aims and hypotheses
+- Methods
+- Results
+- Discussion
+
+Not in the word count:
+- References
+- Appendices
+
+---
+#  Reporting standards
+
++ A key set of references that will help to design and report SCEDs are the:
+  + <a href="https://chris-gaskell.github.io/uos-sced/papers/scribe.pdf">SCRIBE</a> guidelines.
+  + <a href="https://chris-gaskell.github.io/uos-sced/papers/wwc.pdf">WhatWorksClearingHouse</a> guidelines.
++ These will help you write inclusively.
++ Read these before planning a case too!
+
+
+---
+#  What goes in the introduction?  
+
++ Concise summary of relevant background literature about the UP and how it relates to the case.
++ Consider and refer to relevant NICE guidance if available.
++ Provide focus of present case study briefly mentioning rationale and approach and end with specification of hypotheses according to design.
+
+---
+#  What to include in the method  
+
+- Outline of rationale and design of study, brief and confidential description of client (participant), service, supervision, and your details. 
+- List and provide evidence of the psychometric properties of nomothetic measures used and the analysis strategy being taken (e.g. RCSC).
+- Describe the idiographic measures and the data collection methods (e.g. observational schedules, self-monitoring diaries completed by the client) and the analysis strategy being used and naming the package being used.. 
+- A three-column treatment adherence table should be provided detailing the session number, phase of the SCM, content of that session and connection to the - treatment protocol or evidence base. 
+- Describe intervention and formulation (use diagrams as useful summary presentation). 
+- Report any competency checks done by your supervisor.  
+
+
+---
+
+
+```{r tbl54, echo = FALSE}
+tbl54 <- tibble::tribble(
+~`Session`, ~`Phase of study and module`, ~`Content`,
+"Session 1","A: Baseline Beckian CBT for depression (2008)", "Assessment of current functioning",
+"Session 2", "A: Baseline Beckian CBT for depression (2008)", "Assessment of developmental history",
+"Session 3", "A: Baseline Beckian CBT for depression (2008)", "Formulation, Goals, Problem statement",
+"Session 4","B Intervention Beckian CBT for depression (2008)", "Mood diary and activity scheduling of mastery and pleasure activities")
+
+kableExtra::kable_styling(knitr::kable(tbl54), font_size = 25)
+```
+
+---
+#  What goes in the results? Ideographics  
+
++ Visual Analysis:
+  + Time series graphs for each measure:
+  + Show phases of the study.
+  + Observations on the horizontal axis and scores on the vertical axis.
+  + Trend lines which fit your hypotheses (e.g. trend lines, median lines).
++ Table of means + SD for the phases of each idiographic measure.
++ Statistical Analysis:
+  + Baseline phases should be assessed for monotonic trend (visual & statistical analysis [e.g. Tau]).
+  + When significant baseline trend of improvement arises, statistical adjustments should be made (e.g. Tau-U).
++ Table of between phase change using a minimum of three nonoverlap tests (e.g. PND, PEM, PAND, NAP, IRD). These findings should be reported in a table and interpreted using the established guidelines.
+
+---
+
+#  What goes in the results? Nomothetics  
+
++ The scores on nomothetic measure(s) should be presented in a table for each time point.
++ This table also contains reliable and clinical change analysis and also the relevant clinical and community norms on that measure.
++ If there is a sessional nomothetic outcome measure then that should be graphed at each session.
+
+---
+#  What goes in the results?  
+
++ Additional or supplementary data and graphs can be appended to the report after the reference section.
++ When statistical analyses are reported, ensure sufficient details ( t values, d.f . , means and SDs of groups, etc.) for their interpretation are provided.
++ Graphs within the body of the text should be of a high standard of presentation and clearly labelled.
+
+---
+#  What goes in the discussion?   
+
++ The findings should be discussed in relation to the original hypotheses.
++ Please ensure that you relate the results obtained to the design employed.
++ Consider the generalisability of the intervention effect.
++ A critical review of the methods, design and analysis employed should be presented.
++ Please comment on any relevant organisational and ethical issues surrounding this clinical study. The clinical significance of the study should also be addressed.
