@@ -196,6 +196,6 @@ Plot <- ggplot(dat, aes(x = mt, y = values)) +
 
   
 gganimate::animate(Plot, height = 300, width =1200)
-gganimate::anim_save("title-plot2.gif")
+gganimate::anim_save("title-plot3.gif")
 
 ```
