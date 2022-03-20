@@ -165,6 +165,59 @@ hr {
 /*-- Horizontal bars (inverse) --*/
 .inverse hr { background-color: var(--PaleGrey); }
 
+
+/*-- INVERSE 2 SLIDE MODIFICATIONS --*/
+
+/*-- Slide background and text (inverse) --*/
+.inverse2 {
+  background-color:   var(--my-yellow);
+  color:              var(--my-blue);
+  text-shadow:        none;
+}
+
+/*-- Headings (inverse) --*/
+.inverse2 h1, .inverse2 h2, .inverse2 h3 { color: var(--my-blue); }
+
+.inverse2 a {
+  color:              var(--PaleGrey);
+  border-bottom:      1px solid white;
+}
+
+.inverse2 a:hover { color: var(--my-blue); border-bottom: none;}
+
+
+/*-- Footnote --*/
+.inverse2 footnote {
+  position:           absolute;
+  bottom:             2em;
+  padding-right:      3em;
+  padding-left:       0em;
+  font-size:          80%;
+  line-height:        1em;
+}
+
+
+
+
+
+/*-- left-column for the 2-column layout --*/
+.inverse2 .left-column h2:last-of-type, .inverse2 .left-column h3:last-child {
+  color: var(--PaleGrey);
+}
+
+/*-- Text muting/fading --*/
+.fade { opacity: 0.5; }
+
+/*-- Small text --*/
+.small {
+  font-size: 80%;
+}
+/*-- Horizontal bars (inverse) --*/
+.inverse2 hr { background-color: var(--PaleGrey); }
+
+
+
+
 /*-- BOTTOM-OF-SLIDE PROPERTIES ----------------------------------------------*/
 
 /*-- Footnote --*/
