@@ -709,7 +709,7 @@ Explain the reason why.
 .blue[Event Occurrence] = Binary event occurrence (did something happen or not)
 ]
 
-+ The scale can influence the analyses available. Event occurance is more supplementary.
++ The scale can influence the analyses available. Event occurrence is more supplementary.
 + Anchored and scaled effectively – let the client define this.
 
 ---
