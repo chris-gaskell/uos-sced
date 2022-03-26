@@ -47,6 +47,7 @@ svg:hover {
 --DarkRed:            #8A1538;
 --Red:                #DA291C;
 
+--my-brown:           #DAA06D;
 --my-blue:            #122140;
 --my-yellow:          #e5bf00;
 --my-gold:            #ae8f00;
@@ -214,6 +215,69 @@ hr {
 }
 /*-- Horizontal bars (inverse) --*/
 .inverse2 hr { background-color: var(--PaleGrey); }
+
+
+
+
+
+
+
+/*-- Coffee Break SLIDE MODIFICATIONS --*/
+
+/*-- Slide background and text (inverse) --*/
+.inverse3 {
+  background-color:   var(--my-brown);
+  color:              var(--my-blue);
+  text-shadow:        none;
+}
+
+/*-- Headings (inverse) --*/
+.inverse2 h1, .inverse2 h2, .inverse2 h3 { color: var(--my-blue); }
+
+.inverse2 a {
+  color:              var(--PaleGrey);
+  border-bottom:      1px solid white;
+}
+
+.inverse2 a:hover { color: var(--my-blue); border-bottom: none;}
+
+
+/*-- Footnote --*/
+.inverse2 footnote {
+  position:           absolute;
+  bottom:             2em;
+  padding-right:      3em;
+  padding-left:       0em;
+  font-size:          80%;
+  line-height:        1em;
+}
+
+
+
+
+
+/*-- left-column for the 2-column layout --*/
+.inverse2 .left-column h2:last-of-type, .inverse2 .left-column h3:last-child {
+  color: var(--PaleGrey);
+}
+
+/*-- Text muting/fading --*/
+.fade { opacity: 0.5; }
+
+/*-- Small text --*/
+.small {
+  font-size: 80%;
+}
+/*-- Horizontal bars (inverse) --*/
+.inverse2 hr { background-color: var(--PaleGrey); }
+
+
+
+
+
+
+
+
 
 
 
