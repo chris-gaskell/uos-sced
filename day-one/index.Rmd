@@ -223,14 +223,17 @@ background-size:
 
 .footnote[
 .pull-left[
-.Large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
+.small[
+.large[`r icons::icon_style(icons::fontawesome("file-pdf"), scale = 1, fill = "var(--my-yellow)")`]
 This presentation is available as a <a href="https://chris-gaskell.github.io/uos-sced/day-one/output/day-one.pdf">pdf</a> and <a href="https://chris-gaskell.github.io/uos-sced/day-one/output/day-one.pptx">powerpoint</a>
 
 
-.Large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
+.large[`r icons::icon_style(icons::fontawesome("envelope"), scale = 1, fill = "var(--my-yellow)")`]
 If you find any problems with these slides then e-mail
 <a href="mailto:cgaskell1@sheffield.ac.uk">Chris</a>.
-]]
+
+All resources available on the accompanying <a href="https://sced-for-clinicians.netlify.app">teaching website</a>
+]]]
 
 --
 .pull-right[
@@ -369,11 +372,24 @@ background-size:80% 100%
 
 + The ideal is .blue[long and stable] baselines.
 
+---
+exclude: true
+
+#  Baseline requirements
+
+How long should the baseline be? Varies by discipline.
+
+Some argue that there should be stability (5% variability around mean) before progressing to intervention however this is not always essential (or realistic).
+
+When does the baseline end? (should be at a defined, planned point). A good place may be when providing the formulation (if using one).
+
+**Remember**! Your idiographic measures go from the start to end of the work.
+
 --
 
 .pull-left[
 .red[However:]
-+ Not common 
++ Not common.
 + Some disorders have inbuilt variability.
 + Are neutral baselines a fallacy?
 ]
@@ -496,6 +512,7 @@ background-size: 45% 65%
 ]
 
 ---
+exclude: true
 background-image: url(https://images.unsplash.com/photo-1588600878108-578307a3cc9d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJlc2VhcmNofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60)
 background-position:85% 85%
 background-size: cover
@@ -702,6 +719,7 @@ You take these measures (e.g. quality of life) occasionally and often in tandem 
 Qualitative approaches can also be profitably applied to the single-case design. The collection of rich, detailed qualitative information throughout the course of treatment can prove useful in helping to rule out alternative hypotheses
 
 ---
+exclude: true
 name: coffee
 class: inverse3, middle, center
 layout: false
@@ -777,17 +795,6 @@ Explain the reason why.
 For an example of a MS tool click <a href="https://chris-gaskell.github.io/uos-sced/day-one/idiographic-diary.xlsx">here</a>
 
 ---
-#  Baseline requirements
-
-How long should the baseline be? Varies by discipline.
-
-Some argue that there should be stability (5% variability around mean) before progressing to intervention however this is not always essential (or realistic).
-
-When does the baseline end? (should be at a defined, planned point). A good place may be when providing the formulation (if using one).
-
-**Remember**! Your idiographic measures go from the start to end of the work.
-
----
 layout: false
 class: inverse2, top, center
 
@@ -800,9 +807,9 @@ class: inverse2, top, center
 
 .large[- Write a brief (three sentence max) bio/referral about the patient (presenting problems, relevant case info).]
 
-.large[- Develop 4 hypothetical idiographic measures.]
+.large[- Develop **4 hypothetical idiographic measures** (remember to define the construct, the scale and establish how it will be recorded).]
 
-.large[- Remember to define the construct, the scale and establish how it will be recorded.]
+.large[- Pick **2 suitable nomothetic measures** (at what points should the patient complete them?) ]
 
 .large[Present back to the group]]
 
